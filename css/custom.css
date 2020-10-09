@@ -2,3 +2,35 @@
 
 /* hero  */
 
+ /* clients  */
+
+ /* services */
+
+ .services {
+    //display: grid;
+    height: 10vh;
+    width: 100px;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    border: 1px solid black;
+}
+
+
+ /* our company */
+
+ /* hire us  */
+
+ /* achievemens */
+
+ /* watch video */
+
+/* case studies */
+
+/* testimonials */
+
+/* blog */
+
+/* contact  */
+
+/* footer */
