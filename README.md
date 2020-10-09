@@ -19,8 +19,8 @@ Design: [COLORLIB portfolio template](https://colorlib.com/preview/theme/persona
 - no AJAX
 
 ## Authors
-[Mazvydas](https://github.com/Slashass)
-[Ieva](https://github.com/IevaRugine)
-[Algirdas](https://github.com/AlgisP)
-[Katerina]()
-[Andzej]()
+- [Mazvydas](https://github.com/Slashass)
+- [Ieva](https://github.com/IevaRugine)
+- [Algirdas](https://github.com/AlgisP)
+- [Katerina]()
+- [Andzej]()
