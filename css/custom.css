@@ -6,83 +6,33 @@
 
  /* services */
 
- .services {
-    display: grid;
-    grid-template-columns: 100px 1fr 140px;
-    grid-template-areas: 
-        "header header header"
+.services {
+    display: grid; 
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    /* grid-template-areas:
+        "head head head"
         "box box box"
-        "box box box";
-    /* grid-gap: 20px; */
-    padding: 20px;
+        "box box box"; */
     border: 1px solid black;
 }
-    .services > .header{
-        grid-area: header;
-        border: 1px solid black;
-        font-size: 15px;
-        text-align: center;
-        /* grid-column: 1fr 635px 1fr; */
-        grid-row: 97px;
-    }
-    
-    .services> .text{
-        font-size: 10px;
-        border: 1 px solid black;
-        text-align: center;
-    }
 
-    .box {
-        grid-area: box;
+    .services >.header {
+        /* grid-area: head; */
+        grid-column: 1 / span 3;
+        text-align: center;
+        padding: 15px;
+        background-color: cyan;
+    }
+    .services >.box {
+        /* grid-area: box; */
         padding: 15px;
         font-size: 15px;
+        text-align: center;
         border: 1px solid black;
+        background-color: crimson;
     }
-
-     .box > .header {
-         /* width: 100%; */
-         text-align: center;
-         margin-top: 30px;
-         margin-bottom: 20px;
-         /* background-color: aqua; */
-         font-size: 15px;
-         text-decoration:none;
-         /* border: 1px solid black; */
-        }
-
-         .box > .header:hover{
-             color: #8490FF;
-         }
-         .box > .header > .logo{
-             padding: 10px;
-            /* border: 1px solid black; */
-            /* background-color: lightcoral; */
-         }
-          .box > .header > .link {
-            text-decoration: none;
-        }
-            .box > .header > .link > .text {
-                font-size: 15px;
-                color: #222222;
-            }
-        .box > .text{
-            font-size: 12px;
-            margin-bottom: 16px;
-        }
-
-        /* @media (min-width: 992px) {
-        .box {
-            flex: 0 0 33.33%;
-            max-width: 33.33%;
-            }
-        }
-
-        @media (min-width:768px) {
-        .box {
-            flex: 0 0 50%;
-            max-width: 50%;
-          }
-        } */
+    
  /* our company */
 
  /* hire us  */
