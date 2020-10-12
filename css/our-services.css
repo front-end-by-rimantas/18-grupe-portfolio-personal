@@ -16,10 +16,11 @@
 
     }
         .box > .header {
-
+            text-align: center;
             }   
-             box > .header > .logo{
-
+             .box > .header > .logo{
+                display: grid;
+                background-color: crimson;
             }
              .box > .header > .link {
 
