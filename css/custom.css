@@ -1,52 +1,14 @@
+
 /* header */
-
-/* hero  */
-
- /* clients  */
-
- /* services */
-
-.services {
-    display: grid; 
-    grid-template-columns: 200px 200px 200px;
-    grid-template-rows: 200px 200px 200px;
-    /* grid-template-areas:
-        "head head head"
-        "box box box"
-        "box box box"; */
-    border: 1px solid black;
-}
-
-    .services >.header {
-        /* grid-area: head; */
-        grid-column: 1 / span 3;
-        text-align: center;
-        padding: 15px;
-        background-color: cyan;
-    }
-    .services >.box {
-        /* grid-area: box; */
-        padding: 15px;
-        font-size: 15px;
-        text-align: center;
-        border: 1px solid black;
-        background-color: crimson;
-    }
-    
- /* our company */
-
- /* hire us  */
-
- /* achievemens */
-
- /* watch video */
-
-/* case studies */
-
-/* testimonials */
-
+/* hero */
+/* about us */
+/* portfolio gallery */
+/* our services */
+/* our teams */
+/* achievements */
+/* pricing */
 /* blog */
-
-/* contact  */
-
+/* testimonials */
+/* contact us */
+/* maps */
 /* footer */
