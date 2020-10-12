@@ -27,6 +27,9 @@ body {
     .container {
         grid-template-columns: 1fr 800px 1fr;
     }
+    .container-fluid > .row > .col2 {
+        display: none;
+    }
 }
 @media (max-width: 900px) {
     .container {
