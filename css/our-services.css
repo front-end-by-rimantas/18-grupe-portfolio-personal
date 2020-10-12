@@ -1,31 +1,56 @@
 
 .services {
-    
+    display: grid;
+    margin-left: 150px;
+    margin-right: 150px;
 }
     .services > .header {
+        font-size: 30px;
         text-align: center;
-        background-color: red;
+        padding: 10px;
+        /* background-color: red; */
+    
     }
-       .services >.text {
+       .services > .header> .text {
             text-align: center;
-            background-color: chartreuse;
+            text-decoration: none;;
+            font-size: 20px;
+            margin-top: 10px;
+            /* background-color: chartreuse; */
         }
 
     .box {
-        background-color: aqua;
+        /* background-color: aqua; */
+        margin-top: 50px;
+        text-align: center;
 
     }
         .box > .header {
             text-align: center;
+            align-items: center;
             }   
              .box > .header > .logo{
                 display: grid;
-                background-color: crimson;
+                font-size: 40px;
+                /* background-color: crimson; */
             }
-             .box > .header > .link {
+             .box > .header  .link {
+                text-decoration: none;
+                font-size: 20px;
+                margin-top: 30px;
+                
+            }
+
+             .box > .header  .text {
 
             }
-
-             .box > .header > .text {
-
+            .box > .text {
+                 font-size: 15px;
+                 margin: 12px 12px 0px 12px;
             }
+@media (max-width: 1100px) {
+    .services {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}            
