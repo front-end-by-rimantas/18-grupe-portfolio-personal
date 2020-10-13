@@ -1,8 +1,21 @@
-// header import
-// hero import
-// about import
+// header
+// hero
+// about us
+// our services
+// achievements
+// Featured projects
+// Feedback about me
+// blog
+// Sponsors logo
+// footer
 
-
-// header logic
-// hero logic
-// about logic
+// header
+// hero
+// about us
+// our services
+// achievements
+// Featured projects
+// Feedback about me
+// blog
+// Sponsors logo
+// footer
