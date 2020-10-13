@@ -11,7 +11,7 @@
         /* background-color: red; */
     
     }
-       .services > .header> .text {
+       .services > .header > .text {
             text-align: center;
             text-decoration: none;;
             font-size: 20px;
@@ -20,9 +20,10 @@
         }
 
     .box {
-        /* background-color: aqua; */
+        background-color: aqua;
         margin-top: 50px;
         text-align: center;
+        border: 1px solid black;
 
     }
         .box > .header {
