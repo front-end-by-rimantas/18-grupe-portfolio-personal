@@ -1,51 +1,48 @@
 
 .services {
     display: grid;
-    margin-left: 150px;
-    margin-right: 150px;
+
 }
-    .services > .header {
-        font-size: 30px;
+    .services .header {
+        grid-columns: 4 / span 7;
         text-align: center;
-        padding: 10px;
-        /* background-color: red; */
+        /* align-items: center; */
+        background-color: crimson;
     
     }
-       .services > .header > .text {
-            text-align: center;
-            text-decoration: none;;
+       .services .header .text {
             font-size: 20px;
             margin-top: 10px;
             /* background-color: chartreuse; */
         }
 
-    .box {
+    .block {
         background-color: aqua;
         margin-top: 50px;
         text-align: center;
         border: 1px solid black;
 
     }
-        .box > .header {
+        .block > .header {
             text-align: center;
             align-items: center;
             }   
-             .box > .header > .logo{
+             .block > .header > .logo{
                 display: grid;
                 font-size: 40px;
                 /* background-color: crimson; */
             }
-             .box > .header  .link {
+             .block > .header  .link {
                 text-decoration: none;
                 font-size: 20px;
                 margin-top: 30px;
                 
             }
 
-             .box > .header  .text {
+             .block > .header  .text {
 
             }
-            .box > .text {
+            .block > .text {
                  font-size: 15px;
                  margin: 12px 12px 0px 12px;
             }

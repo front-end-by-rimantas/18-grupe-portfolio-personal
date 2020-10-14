@@ -2,6 +2,8 @@
 // hero import
 // about us import
 // our services import
+import { servicesData } from './data/services.js';
+import { renderServices } from './components/services/renderServices.js';
 // achievements import
 // Featured projects import
 // Feedback about me import
@@ -14,6 +16,7 @@
 // hero logic
 // about us logic
 // our services logic
+renderServices(servicesData);
 // achievements logic
 // Featured projects logic
 // Feedback about me logic
