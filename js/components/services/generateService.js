@@ -16,7 +16,7 @@ function generateService(service) {
 
     //<div id="services_block" class="col-4 col-md-6 col-sm-12 box">
 
-    const HTML = `<div class="col-4 col-md-6 col-sm-12 box">
+    const HTML = `<div id="services_block" class="col-4 col-md-6 col-sm-12 box">
                     <span class="fa fa-${service.logo} logo" aria-hidden="true">
                     <a href="#" class="link">${service.title}</a>
         	        </span>
