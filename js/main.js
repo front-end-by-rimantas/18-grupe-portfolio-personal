@@ -1,6 +1,7 @@
 // header import
 // hero import
-// about us import
+// about us import (presonal details)
+import { renderPersonalDetails } from './components/renderPersonalDetails.js';
 // our services import
 // achievements import
 // Featured projects import
@@ -12,7 +13,8 @@
 
 // header logic
 // hero logic
-// about us logic
+// about us logic(personal details)
+renderPersonalDetails();
 // our services logic
 // achievements logic
 // Featured projects logic
