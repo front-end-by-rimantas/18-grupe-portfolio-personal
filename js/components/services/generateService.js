@@ -16,11 +16,12 @@ function generateService(service) {
 
     //<div id="services_block" class="col-4 col-md-6 col-sm-12 box">
 
-    const HTML = `<div id="services_block" class="col-4 col-md-6 col-sm-12 box">
-                    <span class="fa fa-${service.logo} logo" aria-hidden="true">
-                    <a href="#" class="link">${service.title}</a>
-        	        </span>
-                    <p class="text">${service.description}</p>
+    const HTML = `<div class="col-4 col-md-6 col-sm-12">
+                    <div class="singleservice">  
+                      <i class="fa fa-${service.logo}" aria-hidden="true"></i>
+                      <a href="#">${service.title}</a>
+                      <p class=>${service.description}</p>
+                    </div>
                 </div >`;
     // output
     return HTML;
