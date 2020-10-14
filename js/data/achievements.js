@@ -16,7 +16,7 @@ const achievementsData = {
         },
         {
             number: 434,
-            completed: 'Real Profesionals',
+            completed: 'Real Professionals',
         },
     ]
 }

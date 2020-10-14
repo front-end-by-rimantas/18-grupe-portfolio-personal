@@ -1,3 +1,4 @@
+import { achievementsCounter } from './achievementsCounter.js'
 
 function formatAchievement(achievement) {
     // console.log(achievement);
@@ -6,9 +7,9 @@ function formatAchievement(achievement) {
 
     //logic
 
-    return `<div class="col-3 col-md-6 col-sm-12">
-                <p>${achievement.number}</p>
-                <h>${achievement.completed}</h>
+    return `<div class="col-3 col-md-6 col-sm-12 achievementBlock">
+                <p class="number">${achievement.number}</p>
+                <h class="completed">${achievement.completed}</h>
             </div>`
 
 }
