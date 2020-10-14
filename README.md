@@ -2,14 +2,14 @@
 ![Gluten Status](https://img.shields.io/badge/Gluten-Free-green.svg)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
-# Mitech
+# COLORLIB - PERSONAL
 ### 18b group personal website project
 
 This project is for educational porpuses only. Pull request are welcome, but priority for my real-life students! Thank you for your cooperation!
 
 Site published at https://front-end-by-rimantas.github.io/18b-grupe-portfolio/
 
-Design: [Mitech portfolio template](https://demo.hasthemes.com/mitech-preview/index-infotechno.html)
+Design: [COLORLIB portfolio template](https://colorlib.com/preview/theme/personal/)
 
 
 ## Project features
@@ -19,4 +19,8 @@ Design: [Mitech portfolio template](https://demo.hasthemes.com/mitech-preview/in
 - no AJAX
 
 ## Authors
-[Rimantas](https://github.com/belauzas)
+- [Mazvydas](https://github.com/Slashass)
+- [Ieva](https://github.com/IevaRugine)
+- [Algirdas](https://github.com/AlgisP)
+- [Katerina]()
+- [Andzej]()
