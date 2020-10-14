@@ -1,4 +1,3 @@
-import { achievementsCounter } from './achievementsCounter.js'
 
 function formatAchievement(achievement) {
     // console.log(achievement);
@@ -11,7 +10,6 @@ function formatAchievement(achievement) {
                 <p class="number">${achievement.number}</p>
                 <h class="completed">${achievement.completed}</h>
             </div>`
-
 }
 
 export { formatAchievement }
