@@ -5,18 +5,17 @@
 /* portfolio gallery */
 /* our services */
 .services {
-        
+         display: inline-block;
          /* grid-template-columns: 1fr 500px 1fr; */
-         /* display: grid; */
+        
         /* grid-column: 2/3; */
         /* width: 634px; */
         /* align-items: center ; */
         /* align-content: center; */
         /* justify-content: center; */
-        /* display: inline-block;
+        /* display: inline-block;*/
         margin-left: calc((100% - 625px) / 2);
-        margin-right: calc((100% - 625px) / 2); */
-        text-align: center;
+        margin-right: calc((100% - 625px) / 2);        text-align: center;
         /* background-color: crimson; */
     
     }
