@@ -14,10 +14,10 @@ function generateService(service) {
   //<div id="services_block" class="col-4 col-md-6 col-sm-12 box">
 
   const HTML = `<div class="col-4 col-md-6 col-sm-12">
-                    <div class="singleservice">  
-                      <i class="fa fa-${service.logo}" aria-hidden="true"></i>
-                      <a href="#">${service.title}</a>
-                      <p class=>${service.description}</p>
+                    <div class="single-service">  
+                        <i class="logo fa fa-${service.logo}" aria-hidden="true"></i>
+                        <a href="#">${service.title}</a>
+                        <p class=>${service.description}</p> 
                     </div>
                 </div >`;
   // output

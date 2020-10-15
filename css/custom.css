@@ -113,57 +113,74 @@
 /* portfolio gallery */
 /* our services */
 .services {
-    background-color: crimson;
-    
+    display: inline-block;
+    margin-left: 20%;
+    margin-right: 20%;
     }
        .services > h2 {
             text-align: center;
-            font-size: 20px;
-            margin-top: 10px;
-            color: white;
-            
-            /* background-color: chartreuse; */
+            font-size: 30px;
+            padding: 10px;
+            color: black;
         }
 
         .services > p{
             text-align: center;
-            color: aqua
+            color: black;
+            padding: 10px;
         }
 
-        .singleservice {
-        background-color: aqua;
-        margin-top: 50px;
+        .single-service {
         font-size: 25px;
         text-align: center;
-        border: 1px solid black;
-
+        margin-top: 25px;
     }
-        .single-service  .header {
+
+        .single-service > a {
+            text-decoration: none;
             text-align: center;
-            align-items: center;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 25px;
             }    
-             .single-service  .header  .logo{
-                display: grid; 
-                font-size: 60px;
-                height: 60px;
-                width: 60px;
-                background-color: yellow;
-            }
-             .single-service > .header  .link {
-                text-decoration: none;
-                font-size: 20px;
-                margin-top: 30px;
-                
+         .single-service > .logo{
+            display: flex;
+            font-size: 40px;
+            margin-bottom: 40px;
+            justify-content: center;
+           }
+         
+          .single-service> .two:hover{
+               color: yellow;
+           }
+        
+         .single-service > a:hover,
+         .single-service >.logo:hover{
+            color: yellow;
+         }    
+        .single-service > p {
+            font-size: 15px;
+            margin: 12px 12px 0px 12px;
             }
 
-             .single-service > .header  .text {
+@media (max-width: 1100px) {
+    .services {
+        margin-left: 10%;
+        margin-right: 10%;
+        }
 
-            }
-            .single-service > .text {
-                 font-size: 15px;
-                 margin: 12px 12px 0px 12px;
-            }
-   
+@media (max-width: 900px) {
+        .services {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+@media (max-width: 700px) {
+    .services {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        }
 /* our teams */
 /* achievements */
 .achievements {
