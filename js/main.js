@@ -1,6 +1,7 @@
 // header import
 // hero import
-// about us import
+// about us import (presonal details)
+import { renderPersonalDetails } from './components/renderPersonalDetails.js';
 // our services import
 // achievements import
 import { achievementsData } from './data/achievements.js'
@@ -14,7 +15,8 @@ import { renderAchievements } from './components/achievements/renderAchievements
 
 // header logic
 // hero logic
-// about us logic
+// about us logic(personal details)
+renderPersonalDetails();
 // our services logic
 // achievements logic
 renderAchievements(achievementsData)
