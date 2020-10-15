@@ -55,6 +55,40 @@
 /* our services */
 /* our teams */
 /* achievements */
+.achievements {
+    text-align: center;
+    background: -webkit-linear-gradient(0deg,#8490ff 0%,#62bdfc 100%);
+    color: white; 
+}
+
+.achievementBlock {
+    margin-bottom: 25px;
+}
+
+.achievements .number {
+    font-size: 50px;
+    font-weight: 700;
+    animation-name: anim;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    }
+    
+    .achievements .number:before {
+        counter-increment: 0;
+        content: counter(12);
+    }
+    
+    @keyframes anim {
+        100% { counter-increment: variable; }
+    }
+
+
+.achievements .completed {
+    font-size: 20px;
+    font-weight: 300;
+}
+
 /* pricing */
 /* blog */
 /* testimonials */
