@@ -109,26 +109,7 @@
         box-shadow: 0px 20px 20px lightblue;
     }
 
-    @media (max-width: 1100px) {
-        .container > .row >.personal-right.col-lg-6 {
-            grid-column-start:7;
-            grid-column-end: 13;
-            padding-top: 0;
-        }
-            .container > .row > .personal-right.col-lg-6 > h2{
-                font-size: 20px;
-            }
-    @media (max-width: 900px) {
-     
-            .container > .row >.personal-right.col-md-12 {
-                grid-column-start:1;
-                grid-column-end: 13;
-                padding-top: 0;
-            }
-                .container > .row >.personal-right.col-md-12 > h2{
-                    font-size: 20px;
-                }
-    
+
 /* portfolio gallery */
 /* our services */
 /* our teams */
@@ -173,3 +154,24 @@
 /* contact us */
 /* maps */
 /* footer */
+/* media visiem */
+@media (max-width: 1100px) {
+    .container > .row >.personal-right.col-lg-6 {
+        grid-column-start:7;
+        grid-column-end: 13;
+        padding-top: 0;
+    }
+        .container > .row > .personal-right.col-lg-6 > h2{
+            font-size: 20px;
+        }
+@media (max-width: 900px) {
+ 
+        .container > .row >.personal-right.col-md-12 {
+            grid-column-start:1;
+            grid-column-end: 13;
+            padding-top: 0;
+        }
+            .container > .row >.personal-right.col-md-12 > h2{
+                font-size: 20px;
+            }
+
