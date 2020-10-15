@@ -113,21 +113,11 @@
 /* portfolio gallery */
 /* our services */
 .services {
-         display: inline-block;
-         /* grid-template-columns: 1fr 500px 1fr; */
-        
-        /* grid-column: 2/3; */
-        /* width: 634px; */
-        /* align-items: center ; */
-        /* align-content: center; */
-        /* justify-content: center; */
-        /* display: inline-block;*/
-        margin-left: calc((100% - 625px) / 2);
-        margin-right: calc((100% - 625px) / 2);        text-align: center;
-        /* background-color: crimson; */
+    background-color: crimson;
     
     }
-       .services-header .title {
+       .services > h2 {
+            text-align: center;
             font-size: 20px;
             margin-top: 10px;
             color: white;
@@ -135,7 +125,12 @@
             /* background-color: chartreuse; */
         }
 
-    .singleservice {
+        .services > p{
+            text-align: center;
+            color: aqua
+        }
+
+        .singleservice {
         background-color: aqua;
         margin-top: 50px;
         font-size: 25px;
@@ -143,12 +138,12 @@
         border: 1px solid black;
 
     }
-        /* .single-service  .header {
+        .single-service  .header {
             text-align: center;
             align-items: center;
             }    
              .single-service  .header  .logo{
-                /* display: grid; 
+                display: grid; 
                 font-size: 60px;
                 height: 60px;
                 width: 60px;
@@ -168,12 +163,7 @@
                  font-size: 15px;
                  margin: 12px 12px 0px 12px;
             }
-@media (max-width: 1100px) {
-    .services {
-        margin-left: 0;
-        margin-right: 0;
-    }
-}            
+   
 /* our teams */
 /* achievements */
 .achievements {

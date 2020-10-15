@@ -36,7 +36,7 @@ const servicesData = {
             logo: 'rocket',
             title: 'Graphic Design',
             description: 'You’ve heard the expression, “Just believe it and it will come.” Well, technically, that is true, however, ‘believing’ is not just thinking that.',
-        },
+        }
     ]
 };
 
