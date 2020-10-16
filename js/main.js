@@ -1,9 +1,12 @@
 // header import
 import { Header } from './components/header.js';
 // hero import
-// about us import
+// about us import (presonal details)
+import { renderPersonalDetails } from './components/renderPersonalDetails.js';
 // our services import
 // achievements import
+import { achievementsData } from './data/achievements.js'
+import { renderAchievements } from './components/achievements/renderAchievements.js'
 // Featured projects import
 // Feedback about me import
 // Choose your plan import
@@ -16,9 +19,11 @@ new Header({
     selector: '#main_header'
 });
 // hero logic
-// about us logic
+// about us logic(personal details)
+renderPersonalDetails();
 // our services logic
 // achievements logic
+renderAchievements(achievementsData)
 // Featured projects logic
 // Feedback about me logic
 // Choose your plan logic
