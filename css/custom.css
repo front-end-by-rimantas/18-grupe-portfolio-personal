@@ -139,14 +139,13 @@
             font-size: 14px;
             font-weight: 300;
             padding: 10px;
-
         }
         
-        .container> .row > .col-12 >.services >.single-service {
+    .container> .row > .col-12 >.services >.single-service {
             font-size: 25px;
             text-align: center;
             margin-top: 25px;
-    }
+        }
 
             .single-service > div > .logo{
                 display: flex;
@@ -157,7 +156,7 @@
                 margin-bottom: 40px;
                 
              }
-             .single-service > div:hover .logo{
+                .single-service > div:hover .logo{
                     color: #8490FF;
                 }
             .single-service > div > a {
