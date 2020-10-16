@@ -113,39 +113,29 @@
 /* portfolio gallery */
 /* our services */
 .container> .row > .col-12> .services {
-    display: inline-block;
-    text-align: center;
-    /* margin-left: 20%;
-    margin-right: 20%; */
+ 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    text-align: center;
     }
   
        .container> .row > .col-12 > .services > h2{
-            display: inline-block;
-            text-align: center;
-            width: 100%;
-            float: left;
-            font-size: 36px;
-            padding: 10px;
-            color: #282828;
+           margin: auto 0;
+           font-size: 36px;
+           padding: 10px;
         }
         .container> .row > .col-12 >.services > p{
-            display: inline-block;
-            width: 100%;
-            float: left;
-            text-align: center;
-            color: #7777A3;
+            margin: auto 0;
             font-size: 14px;
             font-weight: 300;
             padding: 10px;
+
         }
         
         .container> .row > .col-12 >.services >.single-service {
-        font-size: 25px;
-        text-align: center;
-        margin-top: 25px;
+            font-size: 25px;
+            text-align: center;
+            margin-top: 25px;
     }
 
             .single-service > div > .logo{
@@ -174,32 +164,13 @@
                 .single-service > div:hover a{
                     color: #8490FF;
                 }   
-
-
+                
         .single-service > p {
             font-size: 15px;
             color: #282828;
             margin: 12px 12px 0px 12px;
             }
 
-/* @media (max-width: 1100px) {
-    .services {
-        margin-left: 10%;
-        margin-right: 10%;
-        }
-
-@media (max-width: 900px) {
-        .services {
-            margin-left: 5%;
-            margin-right: 5%;
-        }
-
-@media (max-width: 700px) {
-    .services {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        } */
 /* our teams */
 /* achievements */
 .achievements {
