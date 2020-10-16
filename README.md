@@ -22,5 +22,5 @@ Design: [COLORLIB portfolio template](https://colorlib.com/preview/theme/persona
 - [Mazvydas](https://github.com/Slashass)
 - [Ieva](https://github.com/IevaRugine)
 - [Algirdas](https://github.com/AlgisP)
-- [Katerina]()
-- [Andzej]()
+- [Katerina](https://github.com/Katerynukr)
+- [Andzej](https://github.com/Andzej-F)
