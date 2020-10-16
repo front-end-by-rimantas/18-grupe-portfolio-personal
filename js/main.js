@@ -4,9 +4,11 @@
 import { renderPersonalDetails } from './components/renderPersonalDetails.js';
 // our services import
 // achievements import
-import { achievementsData } from './data/achievements.js'
-import { renderAchievements } from './components/achievements/renderAchievements.js'
+import { achievementsData } from './data/achievements.js';
+import { renderAchievements } from './components/achievements/renderAchievements.js';
 // Featured projects import
+import { photosData } from './data/photos.js';
+import { renderGallery } from './components/gallery/renderGallery.js';
 // Feedback about me import
 // Choose your plan import
 // blog import
@@ -19,8 +21,9 @@ import { renderAchievements } from './components/achievements/renderAchievements
 renderPersonalDetails();
 // our services logic
 // achievements logic
-renderAchievements(achievementsData)
+renderAchievements(achievementsData);
 // Featured projects logic
+renderGallery(photosData);
 // Feedback about me logic
 // Choose your plan logic
 // blog logic
