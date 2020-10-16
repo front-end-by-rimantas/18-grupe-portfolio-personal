@@ -113,72 +113,35 @@
 /* portfolio gallery */
 /* our services */
 .container> .row > .col-12> .services {
-    display: grid;
-    grid-template-rows: 50px 25px 25px;
-
-    /* display: inline-block;
-    margin-left: 20%;
+    display: inline-block;
+    text-align: center;
+    /* margin-left: 20%;
     margin-right: 20%; */
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
     }
-        .container> .row > .col-12> .services > .aside-left-row1{
-            grid-column-start: 1;
-            grid-column-end: 4;
-            grid-row-start: 1;
-            grid-row-end: 1;
-            background-color: aqua;
-            border: 1px solid black;
-        }    
+  
        .container> .row > .col-12 > .services > h2{
-              grid-column-start: 4;
-              grid-column-end: 10;
-              grid-row-start: 1;
-              grid-row-end: 1;
-              background-color: orange;
-              border: 1px solid black;
-            /* display: inline-block;
+            display: inline-block;
             text-align: center;
+            width: 100%;
+            float: left;
             font-size: 36px;
             padding: 10px;
-            color: #282828; */
+            color: #282828;
         }
-        .container> .row > .col-12> .services > .aside-right-row1{
-               grid-column-start: 10;
-                grid-column-end: 13;
-                grid-row-start: 1;
-                grid-row-end: 1;
-                background-color: palevioletred;
-                border: 1px solid black;
-        }  
-        .container> .row > .col-12> .services > .aside-left-row2{
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 2;
-            grid-row-end: 3;
-            border: 1px solid black;
-        }  
         .container> .row > .col-12 >.services > p{
-            grid-column-start: 3;
-            grid-column-end: 11;
-            grid-row-start: 2;
-            grid-row-end: 3;
-            border: 1px solid black;
-            /* display: inline-block;
+            display: inline-block;
+            width: 100%;
+            float: left;
             text-align: center;
             color: #7777A3;
             font-size: 14px;
             font-weight: 300;
-            padding: 10px; */
+            padding: 10px;
         }
-        .container> .row > .col-12> .services > .aside-right-row2{
-            grid-column-start: 11;
-            grid-column-end: 13;
-            grid-row-start: 2;
-            grid-row-end: 3;
-            border: 1px solid black;
-        }  
+        
         .container> .row > .col-12 >.services >.single-service {
         font-size: 25px;
         text-align: center;
