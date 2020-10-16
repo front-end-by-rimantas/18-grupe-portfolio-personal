@@ -121,6 +121,23 @@
 
 
 /* portfolio gallery */
+.projects {
+    text-align: center;
+ 
+}
+
+.projects > .col-12 > h2 {
+    font-size: 36px;
+       color: #222;
+    margin-bottom: 10px;
+} 
+
+.projects > .col-12 > p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #777777;
+}
+
 /* our services */
 /* our teams */
 /* achievements */
