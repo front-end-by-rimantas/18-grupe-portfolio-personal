@@ -133,6 +133,7 @@
            margin: auto 0;
            font-size: 36px;
            padding: 10px;
+           text-transform: capitalize;
         }
         .container> .row > .col-12 >.services > p{
             margin: auto 0;
@@ -162,12 +163,13 @@
             .single-service > div > a {
                 display: flex;
                 justify-content: center;
+                text-transform: capitalize;
                 align-items: center;
-                 text-decoration: none;
-                 text-align: center;
-                 font-weight: bold;
-                 color: #282828;;
-                 margin-bottom: 25px;
+                text-decoration: none;
+                text-align: center;
+                font-weight: bold;
+                color: #282828;;
+                margin-bottom: 25px;
              }    
              
                 .single-service > div:hover a{
