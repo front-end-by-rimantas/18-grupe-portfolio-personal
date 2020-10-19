@@ -14,6 +14,10 @@
 .logo {
     margin-top: 5px;
 }
+.menu-icons {
+    display: inline-block;
+    float: right;
+}
     .menu-icons > .fa {
         font-size: 25px;
         line-height: 30px;
@@ -21,7 +25,6 @@
     .menu-icons > .fa.fa-times {
         display: none;
     }
-
 .nav-background {
     display: none;
     background-color: #000a;
@@ -33,13 +36,15 @@
 }
 
 nav {
-    display: inline-block;
+    display: none;
     float: right;
+    position: fixed;
     font-weight: bold;
     top: 0;
     bottom: 0;
     left: 0;
     min-width: 260px;
+    width: 50%;
     max-width: 500px;
     padding: 15px 0;
     background-color: #0008;
@@ -50,7 +55,7 @@ nav {
         width: 100%;
         padding: 0 15px;
         line-height: 40px;
-        font-size: 18px;
+        font-size: 15px;
         text-decoration: none;
         text-transform: uppercase;
         color: #fff;
@@ -84,7 +89,7 @@ nav {
                 display: inline-block;
                 width: 100%;
                 line-height: 35px;
-                font-size: 18px;
+                font-size: 15px;
                 color: #fff;
                 text-decoration: none;
             }
