@@ -3,6 +3,8 @@
 // about us import (presonal details)
 import { renderPersonalDetails } from './components/renderPersonalDetails.js';
 // our services import
+import { servicesData } from './data/services.js';
+import { renderServices } from './components/services/renderServices.js';
 // achievements import
 import { achievementsData } from './data/achievements.js'
 import { renderAchievements } from './components/achievements/renderAchievements.js'
@@ -18,6 +20,7 @@ import { renderAchievements } from './components/achievements/renderAchievements
 // about us logic(personal details)
 renderPersonalDetails();
 // our services logic
+renderServices(servicesData);
 // achievements logic
 renderAchievements(achievementsData)
 // Featured projects logic
