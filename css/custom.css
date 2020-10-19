@@ -154,6 +154,53 @@
 /* contact us */
 /* maps */
 /* footer */
+.rowF{
+    display:block;
+}
+.colorlib {
+    color: lightblue;
+    text-decoration: none;
+}
+.footer-area {
+    
+    display: block;
+    background-color: orange;
+   /* background-color: #04091e;*/
+}
+.section-gap {
+    padding: 120px 0;
+}
+
+.caption {
+    display: block;
+   
+    color: white;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.footer-text {
+    display: block;
+    color: thistle;
+    
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    
+ }
+.fa {
+    
+    font-size: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+    }
+
+    .fa:hover {
+        color:  lightblue;
+    }
 /* media visiem */
 
 @media (max-width: 1100px) {
