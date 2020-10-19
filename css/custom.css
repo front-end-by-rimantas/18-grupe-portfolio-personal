@@ -126,14 +126,15 @@
     padding-bottom: 70px;
 }
 
-.projects > .col-12 > h3 {
-    font-size: 36px;
+.projects > .col-12 > h1 {
+    font-size: 40px;
     color: #222;
     margin-bottom: 10px;
+    font-weight: 600;
 } 
 
 .projects > .col-12 > p {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 300;
     color: #777777;
 }
@@ -142,7 +143,7 @@
     display: inline-block; 
     width: 100%;
     margin-top: 50px;   
-    padding-right: 15px;
+    padding-right: 15px; 
 }
 
 .img {
@@ -151,7 +152,7 @@
     height: 100%;
     border-radius: 5px;
     position: relative;
-    margin-bottom: 10px;
+   
 }
 
 .image {
@@ -183,7 +184,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100px;
+    width: 80px;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
@@ -191,10 +192,12 @@
 
 .gallery-names {
     text-align: center;
+    font-size: 18px;
 }
 
 .gallery-names > p {
     color: #777777;
+    font-size: 16px;
 }
 
 /* our services */
