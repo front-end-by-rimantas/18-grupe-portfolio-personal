@@ -4,10 +4,10 @@ function formatPhotoPost(gallery) {
     return `<div class="col-4 col-sm-12">
                 <div class="list">
                     <div class="img">
-                        <img src="./img/gallery/${gallery.photo}"
+                        <img class="image" src="./img/gallery/${gallery.photo}"
                         alt="Gallery picture">
                         <div class="overlay">
-                            <img src="./img/gallery/ziuronai.png"
+                            <img class="ziuronai" src="./img/gallery/ziuronai.png"
                             alt="Hover picture">
                         </div>
                     </div>
