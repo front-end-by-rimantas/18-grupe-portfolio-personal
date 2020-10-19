@@ -160,6 +160,40 @@
 
 /* pricing */
 /* blog */
+.blog-header{
+    display: grid;
+    width: 100%;
+    background-color: #F9F9FF;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+        "la ms ms ms ms ra";
+    }
+
+    .left-aside{
+        grid-area:la;
+        }
+    .main-section{
+        grid-area: ms;
+        text-align: center;
+    }
+       .main-section >h2{
+           display: inline-block;
+           width: 96%;
+           padding: 5px;
+           margin: 0 2% 0 2%; 
+           text-transform: capitalize;
+    }
+        .main-section> p {
+            display: inline-block;
+            width: 96%;
+            padding: 2px;
+            margin: 20px 2% 80px 2%;       
+        }
+    .right-aside{
+        grid-aread: ra;
+    }
+
 /* testimonials */
 /* contact us */
 /* maps */
