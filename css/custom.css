@@ -220,16 +220,20 @@
 
 /* pricing */
 /* blog */
-.blog-header{
-    display: grid;
-    width: 100%;
-    background-color: #F9F9FF;
-    grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    grid-template-areas: 
-        "la ms ms ms ms ra";
-    }
 
+.blogs{
+   display: grid;
+   grid-template-rows: 100px; 
+   width: 100%;
+   grid-template-columns: repeat(6, 1fr);
+   grid-auto-rows: minmax(100px, auto);
+   grid-template-areas: 
+            "la ms ms ms ms ra"
+            "post post post post post post ";
+}
+.blog-header{
+    
+    }
     .left-aside{
         grid-area:la;
         }
@@ -251,7 +255,7 @@
             margin: 20px 2% 80px 2%;       
         }
     .right-aside{
-        grid-aread: ra;
+        grid-area: ra;
     }
 
 /* testimonials */
