@@ -67,7 +67,8 @@ nav {
         nav > a:hover,
         nav > a.active,
         nav > .dropdown:hover > .label,
-        nav > .dropdown.active > .label {
+        nav > .dropdown.active > .label,
+        .dropdown > .list > a:hover {
             color: #36f;
         }
         nav > .dropdown > .label > .fa {

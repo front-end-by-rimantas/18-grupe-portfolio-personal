@@ -41,7 +41,7 @@ class Header {
     }
 
     // aditional option action added on nav ----------------------------------
-    // TODO: needed arrow down -----------------------------------------------
+    // TODO: padaryti, kad uzsidarytu dropdown paspaudus betkur --------------
     addEvents() {
         this.menuIconsDOM.addEventListener('click', () => {
             this.DOM.classList.add('expanded');
@@ -59,7 +59,7 @@ class Header {
                 }
                 dropdown.classList.toggle('expanded');
             });
-        }
+        };
     }
 
     // redering action when pressed ------------------------------------------
