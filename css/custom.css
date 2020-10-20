@@ -299,21 +299,25 @@
 
 /* pricing */
 /* blogs */
-
+.blogs-background{
+    background-color:#F9F9FF;
+}
 .blogs{
     display: inline-block;
     width:100%;
+    
     }
     .blogs > .header{
         display: inline-block;
         width: 100%;
+        text-align: center;
     }
         .blogs > .header >.title {
             display: inline-block;
             width: 70%;
             margin: 0 15% 0 15%;
         }
-        .blogs > .header >.title >h2{
+        .blogs > .header >.title >h1{
             display: inline-block;
             width: 96%;
             margin: 0 2% 20px 2%;
@@ -325,18 +329,43 @@
         }
 
     .blogs > .posts{
-        display: flex;
-        flex-wrap: wrap;
+        display: inline-block;
+        width: 100%;
     }
         .blogs > .posts >.single-post{
-            flex:33.33%;
+            display: inline-block;
+            float: left;
+            width:33%;
+            height:450px;
         }
-@media (max-width: 770px) {
+        .blogs > .posts >.single-post:last-child{
+            width:34%;
+        }
+        .single-post >.post-header{
+            display: inline-block;
+            width:90%;
+            margin-top: 0;
+            margin: 0% 5% 10% 5%;
+        }
+
+        .single-post >h2{
+            display: inline-block;
+            width:90%;
+            margin: 5%;
+        }
+        .single-post >p{
+            display: inline-block;
+            width:90%;
+            margin: 5% 5% auto 5%;
+        }
+        @media (max-width: 700px) {
     .blogs > .header >.title {
-        flex: 100%;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
-    .blogs > .posts >.single-post{
-        flex: 100%; 
+    .blogs > .posts >.single-post, .blogs > .posts >.single-post:last-child{
+        width: 100%; 
     }
 }    
 /* testimonials */
