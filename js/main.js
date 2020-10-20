@@ -1,4 +1,4 @@
-// header import
+// header import ---------------------->
 // hero import
 // about us import (presonal details)
 import { renderPersonalDetails } from './components/renderPersonalDetails.js';

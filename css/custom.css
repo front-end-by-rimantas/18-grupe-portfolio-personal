@@ -298,45 +298,47 @@
 }
 
 /* pricing */
-/* blog */
+/* blogs */
 
 .blogs{
-   display: grid;
-   grid-template-rows: 100px; 
-   width: 100%;
-   grid-template-columns: repeat(6, 1fr);
-   grid-auto-rows: minmax(100px, auto);
-   grid-template-areas: 
-            "la ms ms ms ms ra"
-            "post post post post post post ";
-}
-.blog-header{
-    
+    display: inline-block;
+    width:100%;
     }
-    .left-aside{
-        grid-area:la;
+    .blogs > .header{
+        display: inline-block;
+        width: 100%;
+    }
+        .blogs > .header >.title {
+            display: inline-block;
+            width: 70%;
+            margin: 0 15% 0 15%;
         }
-    .main-section{
-        grid-area: ms;
-        text-align: center;
-    }
-       .main-section >h2{
-           display: inline-block;
-           width: 96%;
-           padding: 5px;
-           margin: 0 2% 0 2%; 
-           text-transform: capitalize;
-    }
-        .main-section> p {
+        .blogs > .header >.title >h2{
             display: inline-block;
             width: 96%;
-            padding: 2px;
-            margin: 20px 2% 80px 2%;       
+            margin: 0 2% 20px 2%;
         }
-    .right-aside{
-        grid-area: ra;
-    }
+        .blogs > .header >.title >p{
+            display: inline-block;
+            width: 96%;
+            margin: 0 2% 80px 2%;
+        }
 
+    .blogs > .posts{
+        display: flex;
+        flex-wrap: wrap;
+    }
+        .blogs > .posts >.single-post{
+            flex:33.33%;
+        }
+@media (max-width: 770px) {
+    .blogs > .header >.title {
+        flex: 100%;
+    }
+    .blogs > .posts >.single-post{
+        flex: 100%; 
+    }
+}    
 /* testimonials */
 /* contact us */
 /* maps */
