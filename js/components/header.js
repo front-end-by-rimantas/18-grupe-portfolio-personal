@@ -30,6 +30,10 @@ class Header {
             console.warn('Selector should not be an empty string.');
             return false;
         }
+        if (this.selector === Number) {
+            console.warn('Selector should not be a number.');
+            return false;
+        }
 
         this.DOM = document.querySelector(this.selector);
         if (!this.DOM) {
