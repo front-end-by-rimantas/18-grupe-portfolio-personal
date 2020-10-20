@@ -1,4 +1,4 @@
-import menu from './menuData.js';
+import menu from '../data/menuData.js';
 
 class Header {
     constructor(params) {
