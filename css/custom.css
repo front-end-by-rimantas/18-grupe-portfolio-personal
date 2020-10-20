@@ -311,10 +311,10 @@
 
     }
         .container.testimonial > .row > .col-12.testimonial-header > .col-10.testimonial-header-content{
-        text-align: center;
-        padding-bottom: 70px;
-        padding-left: 15px;
-        padding-right: 15px;
+            text-align: center;
+            padding-bottom: 70px;
+            padding-left: 15px;
+            padding-right: 15px;
         }
             .container.testimonial > .row > .col-12.testimonial-header > .testimonial-header-content > h2{
                 font-size: 36px;
@@ -334,7 +334,7 @@
                 width: 100%;
                 overflow: hidden;
             }
-                .list{
+                .list-testimonial{
                     display: inline-block;
                     width: 200%;
                     margin-left:-50%;
@@ -351,7 +351,7 @@
                             float: left;
                             margin-right: 30px;
                         }
-                            .s-testimonial-left > img{
+                            .s-testimonial-left > .testimonial-img{
                                 display: inline-block;
                                 width: 30px;
                                 height: auto;
