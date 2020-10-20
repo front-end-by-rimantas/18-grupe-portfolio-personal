@@ -3,14 +3,24 @@
 /* hero */
 .discover {
     display: inline-block;
-    padding:  10px 20px;
-    text-decoration: none;
-    background-image: linear-gradient(to right, blue, lightblue);
-    color: white;
-    text-align: center;
+        text-decoration: none;
+        line-height: 42px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-image: linear-gradient(to right, #8490ff, #62bdfc );
+        color: #fff;
+        cursor: pointer;
+        
 }
     .discover:hover {
         box-shadow: 0px 20px 20px lightblue;
+    }
+   
+    .banner-area {
+        
+        background: #f9f9ff;
+        
+        
     }
     
 .this-is-me {
@@ -112,6 +122,66 @@
 
 /* portfolio gallery */
 /* our services */
+.container> .row > .col-12> .services {
+ 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    }
+  
+       .container> .row > .col-12 > .services > h2{
+           margin: auto 0;
+           font-size: 36px;
+           padding: 10px;
+           text-transform: capitalize;
+        }
+        .container> .row > .col-12 >.services > p{
+            margin: auto 0;
+            font-size: 14px;
+            font-weight: 300;
+            padding: 10px;
+        }
+        
+    .container> .row > .col-12 >.services >.single-service {
+            font-size: 25px;
+            text-align: center;
+            margin-top: 25px;
+        }
+
+            .single-service > div > .logo{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #222222;
+                font-size: 40px;
+                margin-bottom: 40px;
+                
+             }
+                .single-service > div:hover .logo{
+                    color: #8490FF;
+                }
+            .single-service > div > a {
+                display: flex;
+                justify-content: center;
+                text-transform: capitalize;
+                align-items: center;
+                text-decoration: none;
+                text-align: center;
+                font-weight: bold;
+                color: #282828;
+                margin-bottom: 25px;
+             }    
+             
+                .single-service > div:hover a{
+                    color: #8490FF;
+                }   
+                
+        .single-service > p {
+            font-size: 15px;
+            color: #282828;
+            margin: 12px 12px 0px 12px;
+            }
+
 /* our teams */
 /* achievements */
 .achievements {
