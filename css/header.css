@@ -70,7 +70,7 @@ nav {
         nav > a.active,
         nav > .dropdown:hover > .label,
         nav > .dropdown.active > .label,
-        .dropdown > .list > a:hover {
+        .dropdown > .list1 > a:hover {
             color: #36f;
         }
         nav > .dropdown > .label > .fa {
@@ -83,15 +83,18 @@ nav {
         display: inline-block;
         width: 100%;
     }
-        .dropdown > .list {
+        .dropdown > .list1 {
             display: none;
             width: 100%;
             padding: 0 0 0 30px;
         }
-            .dropdown.expanded > .list {
+        .list1 {
+            margin-top: 50px;
+        }
+            .dropdown.expanded > .list1 {
                 display: inline-block;
             }
-            .dropdown > .list > a {
+            .dropdown > .list1 > a {
                 display: inline-block;
                 width: 100%;
                 line-height: 35px;
@@ -116,6 +119,7 @@ nav {
     .expanded .nav-background {
         display: none;
     }
+
     nav {
         display: inline-block;
         padding: 0;
@@ -134,9 +138,8 @@ nav {
             position: relative;
             width: auto;
         }
-            .dropdown > .list {
+            .dropdown > .list1 {
                 position: absolute;
-                top: 50px;
                 right: 0;
                 width: auto;
                 min-width: 200px;
@@ -144,10 +147,10 @@ nav {
                 background-color: #fff;
                 box-shadow: 0 2px 8px #0002;
             }
-                .dropdown > .list > a {
+                .dropdown > .list1 > a {
                     color: #333;
                 }
-                .dropdown > .list > a:hover {
+                .dropdown > .list1 > a:hover {
                     color:  #36f;
                 }
 }

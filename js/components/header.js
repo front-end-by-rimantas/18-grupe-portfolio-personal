@@ -73,7 +73,7 @@ class Header {
             if (item.links) {
                 HTML += `<div class="dropdown">
                             <span class="label">${item.name}<i class="fa fa-angle-down"></i></span>
-                            <div class="list">
+                            <div class="list1">
                                 ${this.renderNav(item.links)}
                             </div>
                         </div>`;
