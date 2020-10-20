@@ -383,6 +383,7 @@
         .container > .row > .personal-right.col-lg-6 > h2{
             font-size: 20px;
         }
+    }        
 @media (max-width: 900px) {
  
         .container > .row >.personal-right.col-md-12 {
@@ -393,3 +394,4 @@
             .container > .row >.personal-right.col-md-12 > h2{
                 font-size: 20px;
             }
+}            
