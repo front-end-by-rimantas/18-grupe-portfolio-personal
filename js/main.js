@@ -1,4 +1,5 @@
 // header import
+import { Header } from './components/header.js';
 // hero import
 // about us import (presonal details)
 import { renderPersonalDetails } from './components/renderPersonalDetails.js';
@@ -18,6 +19,7 @@ import { renderGallery } from './components/gallery/renderGallery.js';
 // footer import
 
 // header logic
+new Header({ selector: '#main_header' });
 // hero logic
 // about us logic(personal details)
 renderPersonalDetails();
