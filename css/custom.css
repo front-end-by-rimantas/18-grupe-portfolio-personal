@@ -347,6 +347,37 @@
             margin-top: 0;
             margin: 0% 5% 10% 5%;
         }
+            .single-post img{
+                width:100%;
+        }
+            .post-header >.author{
+                display: inline-block;
+                width:40%;
+                float: left;
+                /* background-color: aqua; */
+            }
+            .single-post .author > img{
+                display: inline-block;
+                float: left;
+                background-color: red;
+                height:40px;
+                width:40px;
+            }
+            .single-post .author > p{
+                display: inline-block;
+                float: right;
+                font-size:8px;
+                height: 40px;
+                width: 50px;
+                
+            }
+            .post-header>.dlc{
+                display: inline-block;
+                width:45%;
+                float: right;
+                background-color: cadetblue;
+            }
+
 
         .single-post >h2{
             display: inline-block;
@@ -358,6 +389,9 @@
             width:90%;
             margin: 5% 5% auto 5%;
         }
+
+
+
         @media (max-width: 700px) {
     .blogs > .header >.title {
         width: 100%;
