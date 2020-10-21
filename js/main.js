@@ -11,6 +11,8 @@ import { renderAchievements } from './components/achievements/renderAchievements
 // Featured projects import
 import { photosData } from './data/photos.js';
 import { renderGallery } from './components/gallery/renderGallery.js';
+import { filterData } from './data/filter.js';
+import { RenderFilter } from './components/gallery/RenderFilter.js';
 // Feedback about me import
 // Choose your plan import
 // blog import
@@ -21,12 +23,14 @@ import { renderGallery } from './components/gallery/renderGallery.js';
 // hero logic
 // about us logic(personal details)
 renderPersonalDetails();
+import { formatAchievement } from './components/achievements/formatAchievement.js';
 // our services logic
 renderServices(servicesData);
 // achievements logic
 renderAchievements(achievementsData);
 // Featured projects logic
 renderGallery(photosData);
+new RenderFilter(filterData);
 // Feedback about me logic
 // Choose your plan logic
 // blog logic
