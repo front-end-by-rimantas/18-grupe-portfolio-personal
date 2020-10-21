@@ -121,48 +121,51 @@
     }
 
 /* portfolio gallery */
-.projects {
+.portfolio {
     text-align: center;
     padding-top: 70px;
     padding-bottom: 70px;
 }
 
-.projects > .col-12 > h1 {
+.portfolio > h1 {
     font-size: 40px;
     color: #222;
     margin-bottom: 10px;
     font-weight: 600;
 } 
 
-.projects > .col-12 > p {
+.portfolio > p {
     font-size: 20px;
     font-weight: 300;
     color: #777777;
 }
 
-.list {
-    display: inline-block; 
-    width: 100%;
-    margin-top: 50px;   
-    padding-right: 15px; 
+.gallery .filter { 
+    display: inline-block;
 }
 
-.img {
-    display: inline-block; 
+.gallery .list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-auto-rows: 380px;
+    gap: 30px;
+    row-gap: 100px;
+}
+
+.gallery .img {
     width: 100%;
     height: 100%;
     border-radius: 5px;
-    position: relative;
-   
+    position: relative; 
 }
 
-.image {
-    display: inline-block; 
+.gallery .image {
     width: 100%;
     height: 100%;
+    margin-bottom: 20px;
 }
 
-.overlay {
+.gallery .overlay {
     height: 100%;
     width: 100%;
     border-radius: 5px; 
@@ -176,12 +179,11 @@
     transition: .3s ease; 
 }
 
-
-.img:hover .overlay {
+.gallery .img:hover .overlay {
     opacity: 0.8;
 }
 
-.ziuronai {   
+.gallery .ziuronai {   
     position: absolute;
     top: 50%;
     left: 50%;
@@ -191,12 +193,12 @@
     text-align: center;
 }
 
-.gallery-names {
+.gallery .gallery-names {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
 }
 
-.gallery-names > p {
+.gallery .gallery-names > p {
     color: #777777;
     font-size: 16px;
 }

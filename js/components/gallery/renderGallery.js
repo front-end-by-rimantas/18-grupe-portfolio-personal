@@ -1,24 +1,102 @@
-import { formatPhotoPost } from './formatPhotoPost.js'
+import { RenderFilter } from './RenderFilter.js'
+import { RenderPhotoList } from './RenderPhotoList.js'
 
-function renderGallery(params) {
+class RenderGallery {
+    constructor(params) {
+        this.selector = params.selector;
+        this.data = params.data;
+        this.imgPath = params.imgPath;
+        this.defaultImg = params.defaultImg;
 
-    //params validation
-    // console.log(params);
+        this.DOM = null;
+        this.filterObj = null;
+        this.photoListObj = null;
 
-    //params logic
-    let photosHTML = '';
-    const galleryDOM = document.querySelector(params.selector);
-    const galleryData = params.data;
-    const galleryCount = galleryData.length
-
-    for (let i = 0; i < galleryCount; i++) {
-        const gallery = galleryData[i];
-        photosHTML += formatPhotoPost(gallery);
+        this.init();
     }
-    //post logic validation
 
-    galleryDOM.innerHTML = photosHTML;
+    init() {
+        if (!this.isValidSelector()) {
+            return;
+        }
 
+        this.render();
+    }
+
+    isValidSelector() {
+        const DOM = document.querySelector(this.selector);  // false -> DOM = null
+        if (DOM) {
+            this.DOM = DOM;
+            return true;
+        }
+        return false;
+    }
+
+    isValidGallery() {
+        return true;
+    }
+
+    generateHTML() {
+        // validation
+        if (!this.isValidGallery()) {
+            return '';
+        }
+
+        // output
+        return `<div class="filter">
+                    FILTER
+                </div>
+                <div class="list">
+                    LIST
+                </div>`;
+    }
+
+    render() {
+        this.DOM.innerHTML = this.generateHTML();
+
+        const filterDOM = this.DOM.querySelector('.filter');
+        const listDOM = this.DOM.querySelector('.list');
+
+        this.filterObj = new RenderFilter({
+            DOM: filterDOM,
+            data: this.data
+        });
+        this.photoListObj = new RenderPhotoList({
+            DOM: listDOM,
+            data: this.data,
+            imgPath: this.imgPath,
+            defaultImg: this.defaultImg
+        });
+    }
 }
 
-export { renderGallery }
+export { RenderGallery }
+
+
+
+
+
+/*
+new Gallery()
+    new Filter()
+        HTML + event
+    new PhotosList()
+        HTML
+*/
+
+/*
+<div id="portfolio_block" class="gallery col-12">
+    <div class="list">
+        <div class="img">
+            <img class="image" src="./img/gallery/${item.photo}" alt="Gallery picture">
+            <div class="overlay">
+                <img class="ziuronai" src="./img/gallery/ziuronai.png" alt="Hover picture">
+            </div>
+            <div class="gallery-names">
+                <h3>${item.name}</h3>
+                <p>${item.subname}</p>
+            </div>
+        </div>
+    </div>
+</div>
+*/

@@ -1,25 +1,23 @@
 const filterData = {
-    selector: '#filter',
-    filter: [
+    selector: '#portfolio_block',
+    data: [
         {
-            title: 'ALL',
-
+            title: `ALL`
         },
         {
-            title: 'VECTOR',
+            title: `VECTOR`
         },
         {
-            title: 'RASTER',
-
+            title: `RASTER`
         },
         {
-            title: 'UI/UX',
-
+            title: `UI/UX`
         },
         {
-            title: 'PRINTING',
+            title: `PRINTING`
         },
     ]
 }
 
 export { filterData }
+

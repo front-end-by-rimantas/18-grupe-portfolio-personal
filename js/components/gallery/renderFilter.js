@@ -2,49 +2,50 @@
 class RenderFilter {
     constructor(params) {
         this.selector = params.selector;
-        this.filterButtons = params.filter;
+        this.data = params.data;
+        this.DOM = params.DOM;
+
+        this.init();
     }
 
-    generateFilter() {
-        let filterHTML = '';
+    init() {
+        this.render();
+    }
 
-        for (let i = 0; i < this.filterButtons.length; i++) {
-            const filterItem = this.filterButtons[i];
-            filterHTML += filterItem.title;
+    generateHTML() {
+        let HTML = '';
+        for (let item of this.data) {
+            HTML += `<div>${item.title}</div>`
         }
-        return filterHTML;
+        return HTML;
     }
-
-    formatFilter() {
-
-        return `<div>${this.generateFilter()}</div>`;
-
-    }
-
 
     render() {
-        const filterDOM = document.querySelector(this.selector);
-        filterDOM.innerHTML = this.formatFilter();
+        this.DOM.innerHTML = this.generateHTML();
     }
-
-    // addEvents() {
-    //     // registruojame scroll event listener
-    //     // priklausomai nuo aukscio, kuriame esu: prideda/atima .scroll klase nuo/ant header elemento
-    //     addEventListener('scroll', () => {
-    //         if (scrollY > 100) {
-    //             this.DOM.closest('header').classList.add('scroll');
-    //         } else {
-    //             this.DOM.closest('header').classList.remove('scroll');
-    //         }
-    //     })
-
-    //     // hamburgerio click'ai
-    //     const hamburger = this.DOM.querySelector('.hamburger');
-    //     const nav = this.DOM.querySelector('nav');
-    //     hamburger.addEventListener('click', () => {
-    //         nav.classList.toggle('visible');
-    //     })
-    // }
 }
 
 export { RenderFilter }
+
+
+
+// addEvents() {
+//     // registruojame scroll event listener
+//     // priklausomai nuo aukscio, kuriame esu: prideda/atima .scroll klase nuo/ant header elemento
+//     addEventListener('scroll', () => {
+//         if (scrollY > 100) {
+//             this.DOM.closest('header').classList.add('scroll');
+//         } else {
+//             this.DOM.closest('header').classList.remove('scroll');
+//         }
+//     })
+
+//     // hamburgerio click'ai
+//     const hamburger = this.DOM.querySelector('.hamburger');
+//     const nav = this.DOM.querySelector('nav');
+//     hamburger.addEventListener('click', () => {
+//         nav.classList.toggle('visible');
+//     })
+// }
+
+
