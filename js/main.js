@@ -1,4 +1,5 @@
 // header import
+import { Header } from './components/header.js';
 // hero import
 // about us import (presonal details)
 import { renderPersonalDetails } from './components/renderPersonalDetails.js';
@@ -20,6 +21,7 @@ import { RenderFilter } from './components/gallery/RenderFilter.js';
 // footer import
 
 // header logic
+new Header({ selector: '#main_header' });
 // hero logic
 // about us logic(personal details)
 renderPersonalDetails();
