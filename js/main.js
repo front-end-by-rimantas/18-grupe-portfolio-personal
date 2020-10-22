@@ -16,7 +16,7 @@ import { renderGallery } from './components/gallery/renderGallery.js';
 // blog import
 // Sponsors logo import
 // footer import
-
+import { verifyEmail } from './email.js'
 // header logic
 // hero logic
 // about us logic(personal details)
@@ -32,3 +32,5 @@ renderGallery(photosData);
 // blog logic
 // Sponsors logo logic
 // footer logic
+verifyEmail();
+
