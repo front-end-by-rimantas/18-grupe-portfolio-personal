@@ -60,7 +60,7 @@ nav {
         width: 100%;
         padding: 0 15px;
         line-height: 40px;
-        font-size: 15px;
+        font-size: 18px;
         text-decoration: none;
         text-transform: uppercase;
         color: #fff;
@@ -69,8 +69,7 @@ nav {
         nav > a:hover,
         nav > a.active,
         nav > .dropdown:hover > .label,
-        nav > .dropdown.active > .label,
-        .dropdown > .list1 > a:hover {
+        nav > .dropdown.active > .label {
             color: #36f;
         }
         nav > .dropdown > .label > .fa {
@@ -83,22 +82,19 @@ nav {
         display: inline-block;
         width: 100%;
     }
-        .dropdown > .list1 {
+        .dropdown > .list {
             display: none;
             width: 100%;
             padding: 0 0 0 30px;
         }
-        .list1 {
-            margin-top: 50px;
-        }
-            .dropdown.expanded > .list1 {
+            .dropdown.expanded > .list {
                 display: inline-block;
             }
-            .dropdown > .list1 > a {
+            .dropdown > .list > a {
                 display: inline-block;
                 width: 100%;
                 line-height: 35px;
-                font-size: 15px;
+                font-size: 18px;
                 color: #fff;
                 text-decoration: none;
             }
@@ -138,8 +134,9 @@ nav {
             position: relative;
             width: auto;
         }
-            .dropdown > .list1 {
+            .dropdown > .list {
                 position: absolute;
+                top: 50px;
                 right: 0;
                 width: auto;
                 min-width: 200px;
@@ -147,10 +144,10 @@ nav {
                 background-color: #fff;
                 box-shadow: 0 2px 8px #0002;
             }
-                .dropdown > .list1 > a {
+                .dropdown > .list > a {
                     color: #333;
                 }
-                .dropdown > .list1 > a:hover {
+                .dropdown > .list > a:hover {
                     color:  #36f;
                 }
 }

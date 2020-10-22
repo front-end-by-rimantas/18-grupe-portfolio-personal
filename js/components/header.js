@@ -30,10 +30,6 @@ class Header {
             console.warn('Selector should not be an empty string.');
             return false;
         }
-        if (this.selector === Number) {
-            console.warn('Selector should not be a number.');
-            return false;
-        }
 
         this.DOM = document.querySelector(this.selector);
         if (!this.DOM) {
@@ -63,7 +59,7 @@ class Header {
                 }
                 dropdown.classList.toggle('expanded');
             });
-        };
+        }
     }
 
     // redering action when pressed ------------------------------------------
@@ -73,7 +69,7 @@ class Header {
             if (item.links) {
                 HTML += `<div class="dropdown">
                             <span class="label">${item.name}<i class="fa fa-angle-down"></i></span>
-                            <div class="list1">
+                            <div class="list">
                                 ${this.renderNav(item.links)}
                             </div>
                         </div>`;

@@ -19,7 +19,9 @@ import { renderGallery } from './components/gallery/renderGallery.js';
 // footer import
 
 // header logic
-new Header({ selector: '#main_header' });
+new Header({
+    selector: '#main_header'
+});
 // hero logic
 // about us logic(personal details)
 renderPersonalDetails();
