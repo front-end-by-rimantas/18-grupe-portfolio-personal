@@ -51,6 +51,10 @@ class RenderGallery {
                 </div>`;
     }
 
+    contentUpdate(tag) {
+        this.photoListObj.update(tag);
+    }
+
     render() {
         this.DOM.innerHTML = this.generateHTML();
 
@@ -59,7 +63,8 @@ class RenderGallery {
 
         this.filterObj = new RenderFilter({
             DOM: filterDOM,
-            data: this.data
+            data: this.data,
+            PARENT: this
         });
         this.photoListObj = new RenderPhotoList({
             DOM: listDOM,
