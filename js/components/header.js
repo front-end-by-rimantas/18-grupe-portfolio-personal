@@ -1,4 +1,4 @@
-import menu from './menuData.js';
+import menu from '../data/menuData.js';
 
 class Header {
     constructor(params) {
@@ -41,7 +41,7 @@ class Header {
     }
 
     // aditional option action added on nav ----------------------------------
-    // TODO: needed arrow down -----------------------------------------------
+    // TODO: padaryti, kad uzsidarytu dropdown paspaudus betkur --------------
     addEvents() {
         this.menuIconsDOM.addEventListener('click', () => {
             this.DOM.classList.add('expanded');
