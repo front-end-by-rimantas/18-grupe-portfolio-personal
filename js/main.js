@@ -15,11 +15,14 @@ import { renderGallery } from './components/gallery/renderGallery.js';
 // Feedback about me import
 // Choose your plan import
 // blog import
+import { blogsData } from './data/blogsData.js';
+import { renderBlogs } from './components/blogs/renderBlogs.js';
 // Sponsors logo import
 // footer import
 
 // header logic
 new Header({ selector: '#main_header' });
+import { formatAchievement } from './components/achievements/formatAchievement.js';
 // hero logic
 // about us logic(personal details)
 renderPersonalDetails();
@@ -32,5 +35,6 @@ renderGallery(photosData);
 // Feedback about me logic
 // Choose your plan logic
 // blog logic
+renderBlogs(blogsData);
 // Sponsors logo logic
 // footer logic
