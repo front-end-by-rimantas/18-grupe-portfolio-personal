@@ -1,10 +1,11 @@
+import {blogsHeaderData} from '../../data/blogsHeaderData.js'; 
 
-function generateBlogsHeader() {
+function generateBlogsHeader(info) {
     
-    const blogsHeaderDOM = document.getElementById("blogs_header").innerHTML=
+    document.querySelector(info.selector).innerHTML=
                      `<div class="title">
-                        <h1>Latest Posts From Our Blog</h1>
-                        <p>You may be a skillful, effective employer but if you don’t trust your personnel and the opposite, then the chances of improving and expanding the business'<>
+                        <h1>${info.header}</h1>
+                        <p>${info.description}</p>
                     </div>`;    
                     
 }
