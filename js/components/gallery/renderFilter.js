@@ -12,6 +12,7 @@ class RenderFilter {
     init() {
         this.render();
         this.addEvents();
+        // this.changeColor();
     }
 
     generateHTML() {
@@ -33,21 +34,17 @@ class RenderFilter {
 
                 if (!uniqueTags.includes(tag)) {
                     uniqueTags.push(tag);
-
-                    console.log(uniqueTags);
                 }
             }
         }
         // generuojame HTML
-        HTML += `<div class="tag active">All</div>`;
+        HTML += `<div class="tag active">ALL</div>`;
         for (let tag of uniqueTags) {
             HTML += `<div class="tag">${tag}</div>`;
         }
 
         return HTML;
     }
-
-
 
     render() {
         this.DOM.innerHTML = this.generateHTML();
@@ -58,35 +55,20 @@ class RenderFilter {
         const tagsDOM = this.DOM.querySelectorAll('.tag');
 
         for (let tag of tagsDOM) {
-            tag.addEventListener('click', () => {
-                this.PARENT.contentUpdate(tag.innerText)
+            tag.addEventListener('click', (e) => {
+                this.PARENT.contentUpdate(tag.innerText);
+
+                document.querySelector('.tag.active').classList.remove('active');
+                e.target.classList.add('active');
             })
         }
     }
-}
 
+}
 
 export { RenderFilter }
 
 
 
-// addEvents() {
-//     // registruojame scroll event listener
-//     // priklausomai nuo aukscio, kuriame esu: prideda/atima .scroll klase nuo/ant header elemento
-//     addEventListener('scroll', () => {
-//         if (scrollY > 100) {
-//             this.DOM.closest('header').classList.add('scroll');
-//         } else {
-//             this.DOM.closest('header').classList.remove('scroll');
-//         }
-//     })
-
-//     // hamburgerio click'ai
-//     const hamburger = this.DOM.querySelector('.hamburger');
-//     const nav = this.DOM.querySelector('nav');
-//     hamburger.addEventListener('click', () => {
-//         nav.classList.toggle('visible');
-//     })
-// }
 
 

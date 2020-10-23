@@ -36,7 +36,7 @@ class RenderPhotoList {
     update(tag) {
         console.log('rodom/nerodom:', tag);
         for (let i = 0; i < this.data.length; i++) {
-            if (tag === 'all') {
+            if (tag === 'ALL') {
                 this.photosDOM[i].classList.remove('hidden');
                 continue;
             }
