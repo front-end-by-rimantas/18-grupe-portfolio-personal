@@ -3,10 +3,10 @@ import { generateBlog } from './generateBlog.js';
 function renderBlogs(parameters) {
     let HTML = '';
     const blogsDOM = document.querySelector(parameters.selector);
-    const blogsData = parameters.data;
+    const blogsContentData = parameters.data;
 
-    for (let i = 0; i < blogsData.length; i += 1) {
-        const blog = blogsData[i];
+    for (let i = 0; i < blogsContentData.length; i += 1) {
+        const blog = blogsContentData[i];
         HTML += generateBlog(blog);
     }
 

@@ -1,4 +1,4 @@
-const blogsData = {
+const blogsContentData = {
     selector: '#blogs_content',
     data: [
         {
@@ -49,4 +49,4 @@ const blogsData = {
     ]
 }
 
-export { blogsData }
+export { blogsContentData }

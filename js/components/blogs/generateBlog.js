@@ -1,7 +1,5 @@
 function generateBlog(blog) {
-
-    const HTML1 = ``;
-    const HTML2 = `<div class="single-post">
+    const HTML = `<div class="single-post">
                     <div class="header">
                         <div class="img-hover-zoom img-hover-zoom--slowmo img">
                             <img src="./img/blogs/image/${blog.image}" alt="post picture">
@@ -21,7 +19,7 @@ function generateBlog(blog) {
                     <h2 class="title">${blog.title}</h2>
                     <div class="text">${blog.text}</div>
                     </div>`;
-    return HTML1 + HTML2;
+    return HTML;
 }
 
 export { generateBlog }

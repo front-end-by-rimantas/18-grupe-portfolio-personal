@@ -15,7 +15,8 @@ import { renderGallery } from './components/gallery/renderGallery.js';
 // Feedback about me import
 // Choose your plan import
 // blog import
-import { blogsData } from './data/blogsData.js';
+import { blogsHeaderData } from './data/blogsHeaderData.js';
+import { blogsContentData } from './data/blogsContentData.js';
 import { renderBlogs } from './components/blogs/renderBlogs.js';
 // Sponsors logo import
 // footer import
@@ -35,6 +36,7 @@ renderGallery(photosData);
 // Feedback about me logic
 // Choose your plan logic
 // blog logic
-renderBlogs(blogsData);
+generateBlogsHeader();
+renderBlogs(blogsContentData);
 // Sponsors logo logic
 // footer logic
