@@ -49,11 +49,21 @@
         .header> img{
                 width:100%;
                 height:60%;
-                transition: all .1s ease-in-out;
+
         }
-        .single-post:hover .header> img {
-            transform: scale(1.1);
-}
+        .img-hover-zoom {
+            height: 300px;
+            width:400px;
+            overflow: hidden;
+          }
+          
+          .img-hover-zoom img {
+            transition: transform .5s ease;
+          }
+          
+          .img-hover-zoom:hover img {
+            transform: scale(1.2);
+          }
         .header > .info {
             display: inline-block;
             width: 100%;

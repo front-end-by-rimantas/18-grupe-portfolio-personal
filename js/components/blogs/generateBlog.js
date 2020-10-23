@@ -3,10 +3,12 @@ function generateBlog(blog) {
     const HTML1 = ``;
     const HTML2 = `<div class="single-post">
                     <div class="header">
-                        <img src="./img/blogs/image/${blog.image}" alt="post picture">
+                        <div class="img-hover-zoom img-hover-zoom--slowmo img">
+                            <img src="./img/blogs/image/${blog.image}" alt="post picture">
+                        </div>      
                         <div class="info">
-                            <div class="author">
-                                <img src="./img/blogs/avatar/${blog.author.avatar}" alt="author's avatar">
+                            <div class="author">        
+                                    <img src="./img/blogs/avatar/${blog.author.avatar}" alt="author's avatar">                                  
                                 <a href="#">${blog.author.name} ${blog.author.lastname}</a>
                             </div>
                             <div class="dlc">
