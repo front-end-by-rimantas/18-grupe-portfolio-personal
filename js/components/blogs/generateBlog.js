@@ -7,19 +7,17 @@ function generateBlog(blog) {
                         <div class="info">
                             <div class="author">
                                 <img src="./img/blogs/avatar/${blog.author.avatar}" alt="author's avatar">
-                                <a href="#">Mark Wiens</a>
+                                <a href="#">${blog.author.name} ${blog.author.lastname}</a>
                             </div>
                             <div class="dlc">
-                             <div class="date">13th Dec</div>
-                                <div class="likes fa fa-heart-o greeting" aria-hidden="true"> 15</div>
-                                <div class="comments fa fa-comment-o" aria-hidden="true"> 04</div>
+                             <div class="date">${blog.blogTimestamp}</div>
+                                <div class="likes fa fa-heart-o greeting" aria-hidden="true"> ${blog.likes}</div>
+                                <div class="comments fa fa-comment-o" aria-hidden="true"> ${blog.comments}</div>
                             </div>
                         </div>
                     </div>
-                    <h2 class="title">break through self doubt and fear</h2>
-                    <div class="text">Dream interpretation has many forms; it can be done be done for the sake
-                    of fun, hobby or
-                        can be taken up as a serious career.</div>
+                    <h2 class="title">${blog.title}</h2>
+                    <div class="text">${blog.text}</div>
                     </div>`;
     return HTML1 + HTML2;
 }
