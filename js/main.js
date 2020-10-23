@@ -7,6 +7,7 @@ import { renderPersonalDetails } from './components/renderPersonalDetails.js';
 import { servicesData } from './data/services.js';
 import { renderServices } from './components/services/renderServices.js';
 // achievements import
+import { formatAchievement } from './components/achievements/formatAchievement.js';
 import { achievementsData } from './data/achievements.js';
 import { renderAchievements } from './components/achievements/renderAchievements.js';
 // Featured projects import
@@ -15,15 +16,14 @@ import { renderGallery } from './components/gallery/renderGallery.js';
 // Feedback about me import
 // Choose your plan import
 // blog import
-import { blogsHeaderData } from './data/blogsHeaderData.js';
 import { blogsContentData } from './data/blogsContentData.js';
+import {generateBlogsHeader} from './components/blogs/generateBlogsHeader.js';
 import { renderBlogs } from './components/blogs/renderBlogs.js';
 // Sponsors logo import
 // footer import
 
 // header logic
 new Header({ selector: '#main_header' });
-import { formatAchievement } from './components/achievements/formatAchievement.js';
 // hero logic
 // about us logic(personal details)
 renderPersonalDetails();
