@@ -1,4 +1,4 @@
-function generateBlog(blog) {
+function generateSingleBlog(blog) {
     const HTML = `<div class="single-post">
                     <div class="header">
                         <div class="img-hover-zoom img-hover-zoom--slowmo img">
@@ -22,4 +22,4 @@ function generateBlog(blog) {
     return HTML;
 }
 
-export { generateBlog }
+export { generateSingleBlog }

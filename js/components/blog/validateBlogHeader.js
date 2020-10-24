@@ -1,6 +1,6 @@
-import { blogsHeaderData } from '../../data/blogsHeaderData.js';
+import { blogData } from '../../data/blogData.js';
 
-function isValidBlogsHeader(title, displayErrors = false) {
+function validateBlogHeader(title, displayErrors = false) {
     let errors = [];
     if (typeof title !== 'object' || title === null) {
         if (displayErrors) {
@@ -11,26 +11,26 @@ function isValidBlogsHeader(title, displayErrors = false) {
     }
 
     //blogs' title validation
-    if (typeof title.header !== 'string') {
+    if (typeof title.header.header !== 'string') {
         errors.push('ERROR: blog\'o pavadinimas turi buti tekstinis');
     } else {
-        if (title.header === '') {
+        if (title.header.header === '') {
             errors.push('ERROR: blog\'o pavadinimas negali buti tuscias');
         }
-        if (title.header.length > 50) {
+        if (title.header.header.length > 50) {
             errors.push('ERROR: blog\'o pavadinimas negali virsyti 50 simboliu');
         }
     }
     // blogs' title description validation
-    if (typeof title.description !== 'string') {
+    if (typeof title.header.description !== 'string') {
         errors.push('ERROR blog\'o aprasymas turi buti tekstas');
         return;
     }
 
-    if (title.description === '') {
+    if (title.header.description === '') {
         errors.push('ERROR blog\'o aprasymas neturi buti tusciass');
     }
-    if (title.description.length > 200) {
+    if (title.header.description.length > 200) {
         errors.push('ERROR blog\'o aprasymas negali virsyti 200 simboliu');
     }
 
@@ -41,4 +41,4 @@ function isValidBlogsHeader(title, displayErrors = false) {
     }
 }
 
-export { isValidBlogsHeader }
+export { validateBlogHeader }

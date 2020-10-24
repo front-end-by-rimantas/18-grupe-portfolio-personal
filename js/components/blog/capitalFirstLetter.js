@@ -1,8 +1,8 @@
-import { blogsHeaderData } from '../../data/blogsHeaderData.js';
+import { blogData } from '../../data/blogData.js';
 
-function isValidCapitalLetter(sentence) {
-    sentence = sentence.header;
-    const words = sentence.split(' ');
+function capitalFirstLetter(sentence) {
+
+    const words = sentence.header.header.split(' ');
     let errors = [];
     for (let i = 0; i < words.length; i += 1) {
         let firstLetter = words[i][0];
@@ -16,4 +16,4 @@ function isValidCapitalLetter(sentence) {
         return true;
     }
 }
-export { isValidCapitalLetter }
+export { capitalFirstLetter }
