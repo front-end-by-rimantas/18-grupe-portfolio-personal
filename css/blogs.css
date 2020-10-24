@@ -40,6 +40,7 @@
             width:34%;
         }
         .single-post >.header {
+            text-transform: capitalize;
             display: inline-block;
             width:90%;          
             margin-top: 0;
@@ -120,7 +121,7 @@
             width:90%;
             margin: 5%;
             text-align: left;
-            text-transform: capitalize;
+            text-transform: uppercase;
         }
 
         .single-post:hover .title {

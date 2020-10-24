@@ -16,6 +16,7 @@ import { renderGallery } from './components/gallery/renderGallery.js';
 // Feedback about me import
 // Choose your plan import
 // blog import
+import {isValidBlogsHeader} from './components/blogs/isValidBlogsHeader.js';
 import {blogsHeaderData} from '../js/data/blogsHeaderData.js';
 import { blogsContentData } from './data/blogsContentData.js';
 import {generateBlogsHeader} from './components/blogs/generateBlogsHeader.js';
@@ -39,5 +40,6 @@ renderGallery(photosData);
 // blog logic
 generateBlogsHeader(blogsHeaderData);
 renderBlogs(blogsContentData);
+isValidBlogsHeader(blogsHeaderData);
 // Sponsors logo logic
 // footer logic
