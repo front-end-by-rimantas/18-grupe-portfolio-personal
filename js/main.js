@@ -16,10 +16,11 @@ import { renderGallery } from './components/gallery/renderGallery.js';
 // Feedback about me import
 // Choose your plan import
 // blog import
-import {isValidBlogsHeader} from './components/blogs/isValidBlogsHeader.js';
-import {blogsHeaderData} from '../js/data/blogsHeaderData.js';
+import { isValidCapitalLetter } from './components/blogs/isValidCapitalLetter.js';
+import { isValidBlogsHeader } from './components/blogs/isValidBlogsHeader.js';
+import { blogsHeaderData } from '../js/data/blogsHeaderData.js';
 import { blogsContentData } from './data/blogsContentData.js';
-import {generateBlogsHeader} from './components/blogs/generateBlogsHeader.js';
+import { generateBlogsHeader } from './components/blogs/generateBlogsHeader.js';
 import { renderBlogs } from './components/blogs/renderBlogs.js';
 // Sponsors logo import
 // footer import
@@ -41,5 +42,6 @@ renderGallery(photosData);
 generateBlogsHeader(blogsHeaderData);
 renderBlogs(blogsContentData);
 isValidBlogsHeader(blogsHeaderData);
+isValidCapitalLetter(blogsHeaderData);
 // Sponsors logo logic
 // footer logic
