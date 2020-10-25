@@ -1,5 +1,3 @@
-import { blogData } from '../../data/blogData.js';
-
 function renderBlogHeader(info) {
 
     document.getElementById('blog_header').innerHTML =
