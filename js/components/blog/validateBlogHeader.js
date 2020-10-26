@@ -1,12 +1,10 @@
-import { blogData } from '../../data/blogData.js';
+import { capitalFirstLetter } from './capitalFirstLetter.js';
 
-function validateBlogHeader(title, displayErrors = false) {
+function validateBlogHeader(title) {
     let errors = [];
     if (typeof title !== 'object' || title === null) {
-        if (displayErrors) {
-            errors.push('ERROR: blog\'o antraste turi buti objektas ');
-            console.error(errors);
-        }
+        errors.push('ERROR: blog\'o antraste turi buti objektas ');
+        console.error(errors);
         return false;
     }
     //blogs' title validation
@@ -19,8 +17,13 @@ function validateBlogHeader(title, displayErrors = false) {
         if (title.header.header.length > 50) {
             errors.push('ERROR: blog\'o pavadinimas negali virsyti 50 simboliu');
         }
+        for (let i = 0; i < title.header.header.split(' ').length; i += 1) {
+            if (capitalFirstLetter(title.header.header.split(' ')[i]) === false) {
+                errors.push('ERROR: pavadinimo zodziai turi prasidedi is didziosios raides');
+            }
+        }
     }
-    // blogs' title description validation
+    // blogs' title description(paragraph) validation
     if (typeof title.header.description !== 'string') {
         errors.push('ERROR blog\'o aprasymas turi buti tekstas');
         return;

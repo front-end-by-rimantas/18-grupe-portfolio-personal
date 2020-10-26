@@ -19,7 +19,7 @@ const blogData = {
                 blogTimestamp: '13th Dec',
                 likes: 15,
                 comments: 4,
-                title: 'break through self doubt and fear',
+                title: 'BREAK THROUGH SELF DOUBT AND FEAR',
                 text: 'Dream interpretation has many forms; it can be done be done for the sake of fun, hobby or can be taken up as a serious career.'
             },
             {
@@ -34,7 +34,7 @@ const blogData = {
                 blogTimestamp: '13th Dec',
                 likes: 15,
                 comments: 4,
-                title: 'portable fashion for young women',
+                title: 'PORTABLE FASHION FOR YOUNG WOMEN',
                 text: 'You may be a skillful, effective employer but if you don’t trust your personnel and the opposite, then the chances of improving.'
             },
             {
@@ -49,7 +49,7 @@ const blogData = {
                 blogTimestamp: '13th Dec',
                 likes: 15,
                 comments: 4,
-                title: 'do dreams serve as a premonition',
+                title: 'DO DREAMS SERVE AS A PREMONITION',
                 text: 'So many of us are demotivated to achieve anything. Such people are not enthusiastic about anything. They don’t want to work involved.'
             }
         ]
