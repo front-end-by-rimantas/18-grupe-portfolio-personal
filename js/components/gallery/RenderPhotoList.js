@@ -17,9 +17,10 @@ class RenderPhotoList {
 
     generateHTML() {
         let HTML = '';
+        const defaultImg = this.defaultImg;
         for (let item of this.data) {
             HTML += `<div class="img">
-                        <img class="image" src="./img/gallery/${item.photo}" alt="Gallery picture">
+                        <img class="image" src="./img/gallery/${item.photo}" alt="${item.name}" onerror="this.src='./img/gallery/${defaultImg}';">
                         <div class="overlay">
                             <img class="ziuronai" src="./img/gallery/ziuronai.png" alt="Hover picture">
                         </div>      
@@ -57,5 +58,4 @@ class RenderPhotoList {
 }
 
 export { RenderPhotoList }
-
 

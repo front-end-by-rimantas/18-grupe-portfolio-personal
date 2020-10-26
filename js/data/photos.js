@@ -1,5 +1,6 @@
 const photosData = {
     selector: '#portfolio_block',
+    defaultImg: 'noimage.jpg',
     data: [
         {
             photo: 'p1.jpg',
