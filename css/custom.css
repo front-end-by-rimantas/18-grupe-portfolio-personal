@@ -343,6 +343,8 @@
 /* pricing */
 /* blogs */
 @import './blogs.css';
+/*sponsors*/
+@import './sponsors.css';
 /* testimonials */
  .container.testimonial{
          padding-top: 120px;
@@ -496,13 +498,13 @@
  }
  
 
-p > .fa-heart-o {
+p > .heart-icon {
     margin-left: 0;
     color: thistle;
     font-size: 15px;
 
 }
-.fa {
+.heart-icon {
     
     font-size: 10px;
     display: inline-block;
@@ -512,7 +514,7 @@ p > .fa-heart-o {
     margin-right: 5px;
     }
 
-    .fa:hover {
+    .heart-icon:hover {
         color:  lightblue;
         
     }
