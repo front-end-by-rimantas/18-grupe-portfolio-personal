@@ -12,7 +12,7 @@ import { achievementsData } from './data/achievements.js';
 import { renderAchievements } from './components/achievements/renderAchievements.js';
 // Featured projects import
 import { photosData } from './data/photos.js';
-import { renderGallery } from './components/gallery/renderGallery.js';
+import { RenderGallery } from './components/gallery/RenderGallery.js';
 // Feedback about me import
 // Choose your plan import
 // blog import
@@ -30,7 +30,7 @@ renderServices(servicesData);
 // achievements logic
 renderAchievements(achievementsData);
 // Featured projects logic
-renderGallery(photosData);
+new RenderGallery(photosData);
 // Feedback about me logic
 // Choose your plan logic
 // blog logic
