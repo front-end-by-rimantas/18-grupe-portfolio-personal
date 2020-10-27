@@ -59,7 +59,7 @@ class RenderAchievements {
                 ach.dataset.run = true;
 
                 let currentValue = 0;
-                const finalValue = this.data[i].value;
+                const finalValue = this.data[i].number;
                 const timeAmount = 1;                   // seconds
                 const fps = 24;                         // frames per second
                 let step = 0;
