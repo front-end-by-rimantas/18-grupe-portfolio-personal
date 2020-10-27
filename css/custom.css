@@ -341,7 +341,8 @@
 }
 
 /* pricing */
-/* blog */
+/* blogs */
+@import './blogs.css';
 /* testimonials */
  .container.testimonial{
          padding-top: 120px;

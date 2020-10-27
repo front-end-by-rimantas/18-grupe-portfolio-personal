@@ -154,3 +154,8 @@ nav {
                     color:  #36f;
                 }
 }
+@media (max-width: 800px) {
+    .list1 {
+        margin-top: 0;
+    }
+}
