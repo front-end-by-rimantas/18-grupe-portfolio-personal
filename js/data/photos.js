@@ -1,36 +1,43 @@
 const photosData = {
-    selector: '#gallery',
+    selector: '#portfolio_block',
+    defaultImg: 'noimage.jpg',
     data: [
         {
             photo: 'p1.jpg',
             name: '2D Vinyl Design',
-            subname: 'Vector'
+            subname: 'Vector',
+            tags: ["VECTOR"]
 
         },
         {
             photo: 'p2.jpg',
             name: '2D Vinyl Design',
-            subname: 'Vector'
+            subname: 'Vector',
+            tags: ["RASTER"]
         },
         {
             photo: 'p3.jpg',
             name: 'Creative Poster Design',
-            subname: 'Agency'
+            subname: 'Agency',
+            tags: ["UI/UX"]
         },
         {
             photo: 'p4.jpg',
             name: 'Embosed Logo Design',
-            subname: 'Portal'
+            subname: 'Portal',
+            tags: ["PRINTING"]
         },
         {
             photo: 'p5.jpg',
             name: '3D Helmet Design',
-            subname: 'Vector'
+            subname: 'Vector',
+            tags: ["VECTOR"]
         },
         {
             photo: 'p6.jpg',
             name: '2D Vinyl Design',
-            subname: 'Raster'
+            subname: 'Raster',
+            tags: ["RASTER"]
         },
     ]
 }
