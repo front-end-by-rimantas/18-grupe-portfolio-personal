@@ -1,5 +1,5 @@
 function formatPhotoPost(gallery) {
-    console.log(gallery);
+
 
     return `<div class="col-4 col-sm-12">
                 <div class="list">
