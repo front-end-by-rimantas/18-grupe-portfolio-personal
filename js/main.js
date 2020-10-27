@@ -25,7 +25,6 @@ new Header({ selector: '#main_header' });
 // hero logic
 // about us logic(personal details)
 renderPersonalDetails();
-import { formatAchievement } from './components/achievements/formatAchievement.js';
 // our services logic
 renderServices(servicesData);
 // achievements logic
