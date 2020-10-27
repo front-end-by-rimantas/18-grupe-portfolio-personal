@@ -12,6 +12,7 @@ function verifyEmail() {
         if (eMailAddress === '') {
             console.log("ERROR: El pasto adresas negali buti tuscias");
             document.getElementById("alert-message").innerText = "The e-mail address can not be empty";
+            return;
         }
 
 
@@ -19,12 +20,14 @@ function verifyEmail() {
 
         if (!eMailAddress.includes(".")) {
             console.log("nera tasko");
-            document.getElementById("alert-message").innerText = "The e-mail address must contain a dot";
+            document.getElementById("alert-message").innerText = "The e-mail address must contain dot";
+            return;
         }
 
         if (!eMailAddress.includes("@")) {
             console.log("nera kilpeles");
             document.getElementById("alert-message").innerText = "The e-mail address must contain ampersand";
+            return;
         }
     });
 

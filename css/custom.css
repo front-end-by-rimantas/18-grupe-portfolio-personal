@@ -412,6 +412,7 @@
 /* contact us */
 /* maps */
 /* footer */
+
 .row{
     display:block;
 }
@@ -478,6 +479,7 @@ p > .fa-heart-o {
 
 #contact-email{
     width: 100%;
+    height: 60px;
 }
 
     #contact-email > .fa-arrow-right {
