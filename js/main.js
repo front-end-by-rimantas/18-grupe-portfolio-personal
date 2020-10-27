@@ -18,7 +18,7 @@ import { RenderGallery } from './components/gallery/RenderGallery.js';
 import { blogMain } from './components/blog/blogMain.js';
 // Sponsors logo import
 // footer import
-
+import { verifyEmail } from './email.js'
 // header logic
 new Header({ selector: '#main_header' });
 // hero logic
@@ -36,3 +36,5 @@ new RenderGallery(photosData);
 blogMain();
 // Sponsors logo logic
 // footer logic
+verifyEmail();
+
