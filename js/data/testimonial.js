@@ -1,5 +1,5 @@
 const testimonialData ={
-    selector:'#testimonial_block',
+    selector:"#testimonial_block",
     data: [ {
         img:'./img/user1.png',
         alt:'Maxwell',
