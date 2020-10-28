@@ -6,24 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <!-- favicon -->
-    <link href="img/favicon.ico" rel="icon" type="image/png">
+    <link href="img/ico.png" rel="icon" type="image/png">
     <!-- reset -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/layout.css">
     <!-- 3rd party -->
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="./css/linearicons.css">
     <!-- components -->
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/blogs.css">
     <!-- custom -->
     <link rel="stylesheet" href="./css/custom.css">
+
 </head>
 
 <body>
     <!-- header -->
-    <header class="container-fluid">
-        <div class="row">
-            HEADER
-        </div>
-    </header>
+    <header id="main_header" class="container-fluid navbar"></header>
     <!-- hero -->
     <section class="banner-area">
         <div class="container">
@@ -34,9 +35,7 @@
                     <p class="this-is-me">THIS IS ME</p>
                     <p class="philip-gilbert">PHILIP GILBERT</p>
                     <p class="text-gilbert">You will begin to realise why this exercise is called the Dickens Pattern
-                        with
-                        reference to the ghost
-                        showing Scrooge some different futures.</p>
+                        with reference to the ghost showing Scrooge some different futures.</p>
                     <a href="#" class="discover">DISCOVER NOW</a>
                 </div>
                 <div class="col-6 col-md-12">
@@ -46,7 +45,6 @@
 
         </div>
     </section>
-
     <!-- about us -->
     <div class="container">
         <div class="row" id="personal">
@@ -57,65 +55,116 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2>Our services</h2>
+                <div class="services">
+                    <h2>My Offered Services</h2>
+                    <p>At about this time of year, some months after New Year’s resolutions have been made and kept, or
+                        made and neglected.</p>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-4 col-md-6 col-sm-12">
-                s 1
-            </div>
-            <div class="col-4 col-md-6 col-sm-12">
-                s 2
-            </div>
-            <div class="col-4 col-md-6 col-sm-12">
-                s 3
-            </div>
-            <div class="col-4 col-md-6 col-sm-12">
-                s 4
-            </div>
-            <div class="col-4 col-md-6 col-sm-12">
-                s 5
-            </div>
-            <div class="col-4 col-md-6 col-sm-12">
-                s 6
-            </div>
+        <div id="services_block" class="row">
+            SERVICES LIST
         </div>
     </div>
     <!-- achievements -->
     <div class="container achievements">
-        <div id="achievements_block" class="row">
-            ACHIEVEMENTS
-        </div>
+        <div id="achievements_block" class="row"></div>
     </div>
     <!-- portfolio gallery -->
     <div class="container">
-        <div class="row">
-            <h2>Featured projects</h2>
-        </div>
-        <div class="row">
-            <div class="col-12 gallery">
-                <div class="filter">
-                    FILTER
-                </div>
-                <div class="list">
-                    LIST
-                </div>
+        <div class="row ">
+            <div class="portfolio col-12">
+                <h1>Our Latest Featured Projects</h1>
+                <p>Who are in extremely love with eco friendly system.</p>
             </div>
         </div>
+        <div class="row">
+            <div id="portfolio_block" class="gallery col-12"></div>
+        </div>
     </div>
+
     <!-- Feedback -->
-    <div class="container">
+    <div class="container testimonial">
+
+        <!-- feedback header -->
         <div class="row">
-            <div class="col-12">
-                <h2>Feedback about me</h2>
+            <div class="col-12 testimonial-header">
+                <div class="col-10 testimonial-header-content">
+                    <h2>Client’s Feedback About Me</h2>
+                    <p>It is very easy to start smoking but it is an uphill task to quit it.
+                        Ask any chain smoker or even a person.</p>
+                </div>
             </div>
         </div>
+
+        <!-- feedback body -->
         <div class="row">
-            <div class="col-12">
-                Feedback PAGINATION
+            <div class="col-12 testimonial-body">
+                <div class="testimonials">
+                    <div class="list-testimonial">
+                        <div class="single-testimonial">
+                            <div class="s-testimonial-left">
+                                <img class="testimonial-img" src="./img/user1.png" alt="Maxwell">
+                            </div>
+                            <div class="s-testimonial-right">
+                                <p>Do you want to be even more successful? Learn to love learning and growth.
+                                    The more effort you put into improving your skills, the bigger the payoff you.</p>
+                                <h4>Harriet Maxwell</h4>
+                                <p>CEO at Google</p>
+                            </div>
+                        </div>
+                        <div class="single-testimonial">
+                            <div class="s-testimonial-left">
+                                <img class="testimonial-img" src="./img/user2.png" alt="Craigl">
+                            </div>
+                            <div class="s-testimonial-right">
+                                <p>A purpose is the eternal condition for success. Every former smoker can tell you just
+                                    how hard it is to stop smoking cigarettes. However.</p>
+                                <h4>Carolyn Craigl</h4>
+                                <p>CEO at Facebook</p>
+                            </div>
+                        </div>
+                        <div class="single-testimonial">
+                            <div class="s-testimonial-left">
+                                <img class="testimonial-img" src="./img/user1.png" alt="Maxwell">
+                            </div>
+                            <div class="s-testimonial-right">
+                                <p>Do you want to be even more successful? Learn to love learning and growth.
+                                    The more effort you put into improving your skills, the bigger the payoff you.</p>
+                                <h4>Harriet Maxwell</h4>
+                                <p>CEO at Google</p>
+                            </div>
+                        </div>
+                        <div class="single-testimonial">
+                            <div class="s-testimonial-left">
+                                <img class="testimonial-img" src="./img/user2.png" alt="Craigl">
+                            </div>
+                            <div class="s-testimonial-right">
+                                <p>A purpose is the eternal condition for success. Every former smoker can tell you just
+                                    how hard it is to stop smoking cigarettes. However.</p>
+                                <h4>Carolyn Craigl</h4>
+                                <p>CEO at Facebook</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-buttons">
+                    <div class="previous">
+                        <span class="lnr lnr-arrow-up"></span>
+                    </div>
+                    <div class="next">
+                        <span class="lnr lnr-arrow-down"></span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+
+
+
+
+
     <!-- choose your plan -->
     <div class="container">
         <div class="row">
@@ -138,16 +187,14 @@
             </div>
         </div>
     </div>
-    <!-- blog -->
-    <div class="container">
+    <!-- blogs -->
+    <div class="container blogs-background">
         <div class="row">
             <div class="col-12">
-                <h2>Blog</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                BLOG PAGINATION
+                <div class="blogs">
+                    <div id="blog_header" class="header"></div>
+                    <div id="blog_content" class="posts"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -161,24 +208,76 @@
     </div>
 
     <!-- footer -->
-    <footer class="container">
+    <link rel="stylesheet" href="./font-awesome.min.css">
+    <footer class="container footer-area section-gap">
         <div class="row">
-            <div class="col-12">
-                About Me
+            <div class="col-5 col-md-6 col-sm-12 margin20">
+                <div class="single-footer-widget">
+
+                </div>
+                <p class="caption">About Me</p>
+                <p class="footer-text">We have tested a number of registry fix and clean utilities and present our top 3
+                    list on our site for your convenience.</p>
+
+                <p class="footer-text">Copyright ©2020 All rights reserved | This template is made with
+                    <i class="heart-icon fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com/"
+                        class="colorlib">Colorlib</a>
+                </p>
+
+
+            </div>
+
+
+            <div class="col-5 col-md-6 col-sm-12 margin20">
+                <p class="caption">Newsletter</p>
+                <p class="footer-text">Stay updated with our latest trends</p>
+                <!-- <label for="email"></label> -->
+                <form target="_blank" action="" id="contact-email">
+                    <input type="email" id="email" placeholder="Enter Email Address" class="email-box">
+                    <div id="email-submit" target="_blank" type="submit" class="fa fa-arrow-right"></div>
+                    <!-- <button type="submit">I agree</button> -->
+
+                </form>
+                <p id="alert-message" style="color: red;">raudonas tekstas</p>
+            </div>
+
+            <div class="col-2 col-md-6 col-sm-12 social-widget margin20">
+                <p class="caption">Follow Me</p>
+                <p class="footer-text">Let us be social</p>
+                <div class="socials">
+                    <a href="#" target="_blank" class="fa fa-facebook"></a>
+                    <a href="#" target="_blank" class="fa fa-twitter"></a>
+                    <a href="#" target="_blank" class="fa fa-dribbble"></a>
+                    <a href="#" target="_blank" class="fa fa-behance"></a>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
-                Newsletter
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                Follow me
-            </div>
         </div>
     </footer>
     <script src="./js/main.js" type="module"></script>
 </body>
 
 </html>
+
+<script>
+    // function verifyEmail() {
+
+    //     console.log(document.getElementById('email').value);
+
+    //     document.getElementById('alert-message').innerHTML = document.getElementById('email').value;
+    // }
+</script>
+
+<!--
+
+<form target="_blank" action="" method="get" novalidate="true">
+    <div class="input-group">
+      <input type="text" class="form-control" name="EMAIL" placeholder="Enter Email Address " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email Address '" required="">
+      <div class="input-group-btn">
+        <button class="btn btn-default" type="submit" onclick="">
+          <span class="lnr lnr-arrow-right"></span>
+        </button>    
+      </div>
+          <div class="info error" style="">Please enter a value</div>  
+    </div>
+  </form> -->
