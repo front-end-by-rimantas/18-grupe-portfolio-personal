@@ -1,4 +1,4 @@
-import { RenderFilter } from './RenderFilter.js'
+import { RenderFilter } from './renderFilter.js'
 import { RenderPhotoList } from './RenderPhotoList.js'
 
 class RenderGallery {

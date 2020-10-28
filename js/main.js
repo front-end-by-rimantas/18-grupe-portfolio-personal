@@ -8,10 +8,10 @@ import { servicesData } from './data/services.js';
 import { renderServices } from './components/services/renderServices.js';
 // achievements import
 import { achievementsData } from './data/achievements.js';
-import { RenderAchievements } from './components/achievements/RenderAchievements.js';
+import { RenderAchievements } from './components/achievements/renderAchievements.js';
 // Featured projects import
 import { photosData } from './data/photos.js';
-import { RenderGallery } from './components/gallery/RenderGallery.js';
+import { RenderGallery } from './components/gallery/renderGallery.js';
 // Feedback about me import
 // Choose your plan import
 // blog import
