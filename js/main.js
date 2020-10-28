@@ -12,7 +12,9 @@ import { RenderAchievements } from './components/achievements/renderAchievements
 // Featured projects import
 import { photosData } from './data/photos.js';
 import { RenderGallery } from './components/gallery/renderGallery.js';
-// Feedback about me import
+// Testimonial import
+import {RenderTetimonial} from './components/testimonial/RenderTestimonial.js';
+import { testimonialData} from './data/testimonial.js';
 // Choose your plan import
 // blog import
 import { blogMain } from './components/blog/blogMain.js';
@@ -30,7 +32,8 @@ renderServices(servicesData);
 new RenderAchievements(achievementsData);
 // Featured projects logic
 new RenderGallery(photosData);
-// Feedback about me logic
+// Testimonial logic
+new RenderTetimonial(testimonialData);
 // Choose your plan logic
 // blog logic
 blogMain();
