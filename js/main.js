@@ -7,9 +7,8 @@ import { renderPersonalDetails } from './components/renderPersonalDetails.js';
 import { servicesData } from './data/services.js';
 import { renderServices } from './components/services/renderServices.js';
 // achievements import
-import { formatAchievement } from './components/achievements/formatAchievement.js';
 import { achievementsData } from './data/achievements.js';
-import { renderAchievements } from './components/achievements/renderAchievements.js';
+import { RenderAchievements } from './components/achievements/RenderAchievements.js';
 // Featured projects import
 import { photosData } from './data/photos.js';
 import { RenderGallery } from './components/gallery/RenderGallery.js';
@@ -28,7 +27,7 @@ renderPersonalDetails();
 // our services logic
 renderServices(servicesData);
 // achievements logic
-renderAchievements(achievementsData);
+new RenderAchievements(achievementsData);
 // Featured projects logic
 new RenderGallery(photosData);
 // Feedback about me logic
