@@ -12,8 +12,12 @@ import { RenderAchievements } from './components/achievements/renderAchievements
 // Featured projects import
 import { photosData } from './data/photos.js';
 import { RenderGallery } from './components/gallery/renderGallery.js';
-// Feedback about me import
+// Testimonial import
+import {RenderTetimonial} from './components/testimonial/RenderTestimonial.js';
+import { testimonialData} from './data/testimonial.js';
 // Choose your plan import
+import { plans } from './data/plans.js';
+import { renderPlans } from './components/renderPlans.js';
 // blog import
 import { blogMain } from './components/blog/blogMain.js';
 // Sponsors logo import
@@ -30,8 +34,10 @@ renderServices(servicesData);
 new RenderAchievements(achievementsData);
 // Featured projects logic
 new RenderGallery(photosData);
-// Feedback about me logic
+// Testimonial logic
+new RenderTetimonial(testimonialData);
 // Choose your plan logic
+renderPlans(plans);
 // blog logic
 blogMain();
 // Sponsors logo logic
