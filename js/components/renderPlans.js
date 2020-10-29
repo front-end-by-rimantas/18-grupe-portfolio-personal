@@ -1,5 +1,3 @@
-import { plans } from '../data/plans.js';
-
 function renderPlans(data) {
     let HTML = ''
     for (let i = 0; i < data.length; i++) {
