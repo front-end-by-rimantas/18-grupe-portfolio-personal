@@ -16,6 +16,8 @@ import { RenderGallery } from './components/gallery/renderGallery.js';
 import {RenderTetimonial} from './components/testimonial/RenderTestimonial.js';
 import { testimonialData} from './data/testimonial.js';
 // Choose your plan import
+import { plans } from './data/plans.js';
+import { renderPlans } from './components/renderPlans.js';
 // blog import
 import { blogMain } from './components/blog/blogMain.js';
 // Sponsors logo import
@@ -35,6 +37,7 @@ new RenderGallery(photosData);
 // Testimonial logic
 new RenderTetimonial(testimonialData);
 // Choose your plan logic
+renderPlans(plans);
 // blog logic
 blogMain();
 // Sponsors logo logic
