@@ -13,10 +13,16 @@
     <!-- 3rd party -->
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="./css/linearicons.css">
     <!-- components -->
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/blogs.css">
+    <link rel="stylesheet" href="./css/sponsors.css">
     <link rel="stylesheet" href="./css/plans.css">
+
     <!-- custom -->
     <link rel="stylesheet" href="./css/custom.css">
+
 </head>
 
 <body>
@@ -65,18 +71,18 @@
     </div>
     <!-- achievements -->
     <div class="container achievements">
-        <div id="achievements_block" class="row">
-            ACHIEVEMENTS
-        </div>
+        <div id="achievements_block" class="row"></div>
     </div>
     <!-- portfolio gallery -->
     <div class="container">
-        <div class="row projects">
-            <div class="col-12">
+        <div class="row ">
+            <div class="portfolio col-12">
                 <h1>Our Latest Featured Projects</h1>
                 <p>Who are in extremely love with eco friendly system.</p>
             </div>
         </div>
+        <div class="row">
+            <div id="portfolio_block" class="gallery col-12"></div>
         <div id="gallery" class="row">
             <div class="filter">
                 FILTER
@@ -84,19 +90,45 @@
             PHOTO GALLERY
         </div>
     </div>
+
     <!-- Feedback -->
-    <div class="container">
+    <div class="container testimonial">
+
+        <!-- feedback header -->
         <div class="row">
-            <div class="col-12">
-                <h2>Feedback about me</h2>
+            <div class="col-12 testimonial-header">
+                <div class="col-10 testimonial-header-content">
+                    <h2>Client’s Feedback About Me</h2>
+                    <p>It is very easy to start smoking but it is an uphill task to quit it.
+                        Ask any chain smoker or even a person.</p>
+                </div>
             </div>
         </div>
+
+        <!-- feedback body -->
         <div class="row">
-            <div class="col-12">
-                Feedback PAGINATION
+            <div class="col-12 testimonial-body">
+                <div class="testimonials">
+                    <div id="testimonial_block" class="list-testimonial">
+                    </div>
+                </div>
+                <div class="testimonial-buttons">
+                    <div class="previous">
+                        <span class="lnr lnr-arrow-up"></span>
+                    </div>
+                    <div class="next">
+                        <span class="lnr lnr-arrow-down"></span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+
+
+
+
+
     <!-- choose your plan -->
     <div id="plans" class="container">
         <div class="row">
@@ -126,47 +158,90 @@
             </div>
         </div>
     </div>
-    <!-- blog -->
-    <div class="container">
+    <!-- blogs -->
+    <div class="container blogs-background">
         <div class="row">
             <div class="col-12">
-                <h2>Blog</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                BLOG PAGINATION
+                <div class="blogs">
+                    <div id="blog_header" class="header"></div>
+                    <div id="blog_content" class="posts"></div>
+                </div>
             </div>
         </div>
     </div>
     <!-- sponsors -->
-    <div class="container">
+    <div class="container s-background">
         <div class="row">
-            <div class="col-12">
-                <h2>Sponsors logo</h2>
+            <div class="col-12 sponsors">
+                <div class="single-sponsor">
+                    <img class="logo" src="./img/sponsors-logos/sponsor-logo-1.png" alt="logo 1">
+                </div>
+                <div class="single-sponsor">
+                    <img class="logo" src="./img/sponsors-logos/sponsor-logo-2.png" alt="logo 2">
+                </div>
+                <div class="single-sponsor">
+                    <img class="logo" src="./img/sponsors-logos/sponsor-logo-3.png" alt="logo 3">
+                </div>
+                <div class="single-sponsor">
+                    <img class="logo" src="./img/sponsors-logos/sponsor-logo-4.png" alt="logo 4">
+                </div>
+                <div class="single-sponsor">
+                    <img class="logo" src="./img/sponsors-logos/sponsor-logo-5.png" alt="logo 5">
+                </div>
             </div>
         </div>
     </div>
 
     <!-- footer -->
-    <footer class="container">
+    <link rel="stylesheet" href="./font-awesome.min.css">
+    <footer class="container footer-area section-gap">
         <div class="row">
-            <div class="col-12">
-                About Me
+            <div class="col-5 col-md-6 col-sm-12 margin20">
+                <div class="single-footer-widget">
+
+                </div>
+                <p class="caption">About Me</p>
+                <p class="footer-text">We have tested a number of registry fix and clean utilities and present our top 3
+                    list on our site for your convenience.</p>
+
+                <p class="footer-text">Copyright ©2020 All rights reserved | This template is made with
+                    <i class="heart-icon fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com/"
+                        class="colorlib">Colorlib</a>
+                </p>
+
+
+            </div>
+
+
+            <div class="col-5 col-md-6 col-sm-12 margin20">
+                <p class="caption">Newsletter</p>
+                <p class="footer-text">Stay updated with our latest trends</p>
+                <!-- <label for="email"></label> -->
+                <form target="_blank" action="" id="contact-email">
+                    <input type="email" id="email" placeholder="Enter Email Address" class="email-box">
+                    <div id="email-submit" target="_blank" type="submit" class="fa fa-arrow-right"></div>
+                    <!-- <button type="submit">I agree</button> -->
+
+                </form>
+                <p id="alert-message" style="color: red;">raudonas tekstas</p>
+            </div>
+
+            <div class="col-2 col-md-6 col-sm-12 social-widget margin20">
+                <p class="caption">Follow Me</p>
+                <p class="footer-text">Let us be social</p>
+                <div class="socials">
+                    <a href="#" target="_blank" class="fa fa-facebook"></a>
+                    <a href="#" target="_blank" class="fa fa-twitter"></a>
+                    <a href="#" target="_blank" class="fa fa-dribbble"></a>
+                    <a href="#" target="_blank" class="fa fa-behance"></a>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
-                Newsletter
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                Follow me
-            </div>
         </div>
     </footer>
     <script src="./js/main.js" type="module"></script>
 </body>
 
 </html>
+
+

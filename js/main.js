@@ -8,18 +8,21 @@ import { servicesData } from './data/services.js';
 import { renderServices } from './components/services/renderServices.js';
 // achievements import
 import { achievementsData } from './data/achievements.js';
-import { renderAchievements } from './components/achievements/renderAchievements.js';
+import { RenderAchievements } from './components/achievements/renderAchievements.js';
 // Featured projects import
 import { photosData } from './data/photos.js';
-import { renderGallery } from './components/gallery/renderGallery.js';
-// Feedback about me import
+import { RenderGallery } from './components/gallery/renderGallery.js';
+// Testimonial import
+import {RenderTetimonial} from './components/testimonial/RenderTestimonial.js';
+import { testimonialData} from './data/testimonial.js';
 // Choose your plan import
 import { plans } from './data/plans.js';
 import { renderPlans } from './components/renderPlans.js';
 // blog import
+import { blogMain } from './components/blog/blogMain.js';
 // Sponsors logo import
 // footer import
-
+import { verifyEmail } from './email.js'
 // header logic
 new Header({ selector: '#main_header' });
 // hero logic
@@ -28,12 +31,16 @@ renderPersonalDetails();
 // our services logic
 renderServices(servicesData);
 // achievements logic
-renderAchievements(achievementsData);
+new RenderAchievements(achievementsData);
 // Featured projects logic
-renderGallery(photosData);
-// Feedback about me logic
+new RenderGallery(photosData);
+// Testimonial logic
+new RenderTetimonial(testimonialData);
 // Choose your plan logic
 renderPlans(plans);
 // blog logic
+blogMain();
 // Sponsors logo logic
 // footer logic
+verifyEmail();
+
