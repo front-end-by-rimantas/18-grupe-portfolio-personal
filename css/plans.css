@@ -53,6 +53,7 @@
 
 .price-item:hover h1 {
     color: var(--color-blue-anti);
+    font-size: 45px;
 }
 
 .price-item:hover h4 {
