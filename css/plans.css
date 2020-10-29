@@ -34,6 +34,7 @@
 }
 .container > .plans > .price-item {
     display: grid;
+    padding-bottom: 60px;
 }
 .price-item {
     text-align: center;
