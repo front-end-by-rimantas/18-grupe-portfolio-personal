@@ -1,5 +1,6 @@
 const achievementsData = {
     selector: '#achievements_block',
+    insertionPosition: 'beforeend',
     data: [
         {
             number: 2536,
