@@ -14,6 +14,8 @@ import { photosData } from './data/photos.js';
 import { renderGallery } from './components/gallery/renderGallery.js';
 // Feedback about me import
 // Choose your plan import
+import { plans } from './data/plans.js';
+import { renderPlans } from './components/renderPlans.js';
 // blog import
 // Sponsors logo import
 // footer import
@@ -31,6 +33,7 @@ renderAchievements(achievementsData);
 renderGallery(photosData);
 // Feedback about me logic
 // Choose your plan logic
+renderPlans(plans);
 // blog logic
 // Sponsors logo logic
 // footer logic
