@@ -167,17 +167,18 @@
     left: 0;
 }
 @media (max-width: 1040px) {
-    .col-md-2 {
+    .container > .col-md-2 {
+        display: grid;
         grid-template-columns: 1fr 1fr;
     }
 }
 @media (max-width: 840px) {
-    .col-md-2 {
+    .container > .col-md-2 {
         grid-template-columns: 1fr 1fr;
     }
 }
 @media (max-width: 640px) {
-    .col-xs-1 {
+    .container > .col-xs-1 {
         grid-template-columns: 1fr;
     }
 }
