@@ -1,8 +1,10 @@
 class Sponsors {
     constructor(params) {
-        this.DOM = params.DOM;
-        console.log("kas yra");
-        console.log(this.DOM);
+        //console.log("params yra");
+        //console.log(params);
+        //this.DOM = params.DOM;
+        //console.log("kas yra");
+        //console.log(this.DOM);
         this.data = params.data;
         this.imgPath = params.imgPath;
 
@@ -29,12 +31,12 @@ class Sponsors {
                     </div>`;
         }
         return HTML;
-
+        console.log(HTML);
     }
 
     render() {
-        this.DOM.innerHTML = this.generateHTML();
-        this.brandsDOM = this.DOM.querySelectorAll('.brand-logo');
+        this.generateHTML();
+        //this.brandsDOM = this.DOM.querySelectorAll('.brand-logo');
     }
 }
 
