@@ -59,12 +59,12 @@ class Header {
         //     this.DOM.classList.remove('expanded');
         // });
 
-        this.navBackgroundDOM.addEventListener = function keyCode(event) {
-            let x = event.keyCode;
-            if (x === 27) {
-                this.DOM.classList.remove('expanded');
-            }
-        };
+        // this.navBackgroundDOM.addEventListener = function keyCode(event) {
+        //     let x = event.keyCode;
+        //     if (x === 27) {
+        //         this.DOM.classList.remove('expanded');
+        //     }
+        // };
 
         for (const dropdown of this.menuDropdownsDOM) {
             dropdown.querySelector('.label').addEventListener('click', () => {
