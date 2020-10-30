@@ -1,6 +1,8 @@
 class Sponsors {
     constructor(params) {
         this.DOM = params.DOM;
+        console.log("kas yra");
+        console.log(this.DOM);
         this.data = params.data;
         this.imgPath = params.imgPath;
 
@@ -32,10 +34,8 @@ class Sponsors {
 
     render() {
         this.DOM.innerHTML = this.generateHTML();
-
-        //this.brandsDOM = this.DOM.querySelectorAll('.brand-logo');
+        this.brandsDOM = this.DOM.querySelectorAll('.brand-logo');
     }
 }
 
-console.log("hello");
 export { Sponsors }
