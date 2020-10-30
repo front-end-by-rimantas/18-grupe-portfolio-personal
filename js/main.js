@@ -13,14 +13,16 @@ import { RenderAchievements } from './components/achievements/renderAchievements
 import { photosData } from './data/photos.js';
 import { RenderGallery } from './components/gallery/renderGallery.js';
 // Testimonial import
-import {RenderTetimonial} from './components/testimonial/RenderTestimonial.js';
-import { testimonialData} from './data/testimonial.js';
+import { RenderTetimonial } from './components/testimonial/RenderTestimonial.js';
+import { testimonialData } from './data/testimonial.js';
 // Choose your plan import
 import { plans } from './data/plans.js';
 import { renderPlans } from './components/renderPlans.js';
 // blog import
 import { blogMain } from './components/blog/blogMain.js';
 // Sponsors logo import
+import { sponsorsData } from './data/sponsorsData.js';
+import { Sponsors } from './components/sponsors/Sponsors.js';
 // footer import
 import { verifyEmail } from './email.js'
 // header logic
@@ -41,6 +43,7 @@ renderPlans(plans);
 // blog logic
 blogMain();
 // Sponsors logo logic
+new Sponsors(sponsorsData);
 // footer logic
 verifyEmail();
 

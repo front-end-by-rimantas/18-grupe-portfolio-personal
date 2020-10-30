@@ -12,14 +12,14 @@
     width:20%;
     float:left;
 }
-    .single-sponsor > .logo {
+    .brand-logo {
             margin: 0 20% 0 20%;
             width:60%;
             height: 75px;
             opacity: 0.4;
     }
 
-    .single-sponsor > .logo:hover{
+    .brand-logo:hover{
         opacity: 1.2; 
         cursor: grab;
         transition-duration: 0.1s;
