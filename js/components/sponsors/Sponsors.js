@@ -1,14 +1,10 @@
 class Sponsors {
     constructor(params) {
-        //console.log("params yra");
-        //console.log(params);
-        //this.DOM = params.DOM;
-        //console.log("kas yra");
-        //console.log(this.DOM);
+        this.DOM = params.DOM;
         this.data = params.data;
         this.imgPath = params.imgPath;
 
-        this.brandsDOM = null;
+        this.photosDOM = null;
 
         this.init();
     }
@@ -30,13 +26,16 @@ class Sponsors {
                         <img class="brand-logo" src="${this.imgPath + item.img}" alt="${imgAlt}">
                     </div>`;
         }
+        const feedDOM = document.getElementById('sponsors_block');
+        HTML = feedDOM;
         return HTML;
-        console.log(HTML);
     }
 
     render() {
         this.generateHTML();
-        //this.brandsDOM = this.DOM.querySelectorAll('.brand-logo');
+
+        //this.photosDOM = document.querySelectorAll('.brand-logo');
+
     }
 }
 
