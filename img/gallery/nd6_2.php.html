@@ -1,0 +1,185 @@
+
+<!-- saved from url=(0034)http://localhost/bla/bla/nd6_2.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript">// Promises 
+var _eid_promises = {}; 
+// Turn the incoming message from extension 
+// into pending Promise resolving 
+window.addEventListener("message", function(event) { 
+    if(event.source !== window) return; 
+    if(event.data.src && (event.data.src === "background.js")) { 
+        console.log("Page received: "); 
+        console.log(event.data); 
+        // Get the promise 
+        if(event.data.nonce) { 
+            var p = _eid_promises[event.data.nonce]; 
+            // resolve 
+            if(event.data.result === "ok") { 
+                if(event.data.signature !== undefined) { 
+                    p.resolve({hex: event.data.signature}); 
+                } else if(event.data.version !== undefined) { 
+                    p.resolve(event.data.extension + "/" + event.data.version); 
+                } else if(event.data.cert !== undefined) { 
+                    p.resolve({hex: event.data.cert}); 
+                } else { 
+                    console.log("No idea how to handle message"); 
+                    console.log(event.data); 
+                } 
+            } else { 
+                // reject 
+                p.reject(new Error(event.data.result)); 
+            } 
+            delete _eid_promises[event.data.nonce]; 
+        } else { 
+            console.log("No nonce in event msg"); 
+        } 
+    } 
+}, false); 
+ 
+ 
+function TokenSigning() { 
+    function nonce() { 
+        var val = ""; 
+        var hex = "abcdefghijklmnopqrstuvwxyz0123456789"; 
+        for(var i = 0; i < 16; i++) val += hex.charAt(Math.floor(Math.random() * hex.length)); 
+        return val; 
+    } 
+ 
+    function messagePromise(msg) { 
+        return new Promise(function(resolve, reject) { 
+            // amend with necessary metadata 
+            msg["nonce"] = nonce(); 
+            msg["src"] = "page.js"; 
+            // send message 
+            window.postMessage(msg, "*"); 
+            // and store promise callbacks 
+            _eid_promises[msg.nonce] = { 
+                resolve: resolve, 
+                reject: reject 
+            }; 
+        }); 
+    } 
+    this.getCertificate = function(options) { 
+        var msg = {type: "CERT", lang: options.lang, filter: options.filter}; 
+        console.log("getCertificate()"); 
+        return messagePromise(msg); 
+    }; 
+    this.sign = function(cert, hash, options) { 
+        var msg = {type: "SIGN", cert: cert.hex, hash: hash.hex, hashtype: hash.type, lang: options.lang, info: options.info}; 
+        console.log("sign()"); 
+        return messagePromise(msg); 
+    }; 
+    this.getVersion = function() { 
+        console.log("getVersion()"); 
+        return messagePromise({ 
+            type: "VERSION" 
+        }); 
+    }; 
+}</script></head><body>?&gt;
+<br><br><br>
+6. Sugeneruokite masyvą iš 100 elementų, kurio reikšmės atsitiktiniai skaičiai nuo 333 iki 777.
+Naudodami 4 uždavinio funkciją iš masyvo ištrinkite pirminius skaičius.
+<br><br>
+<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0dalijasi tik iš savęs ir vieneto<br>Array
+(
+    [0] =&gt; 615
+    [1] =&gt; 686
+    [2] =&gt; 573
+    [3] =&gt; 492
+    [4] =&gt; 438
+    [5] =&gt; 694
+    [6] =&gt; 358
+    [7] =&gt; 366
+    [8] =&gt; 603
+    [9] =&gt; 456
+    [10] =&gt; 361
+    [11] =&gt; 394
+    [12] =&gt; 568
+    [13] =&gt; 393
+    [14] =&gt; 395
+    [15] =&gt; 528
+    [16] =&gt; 388
+    [17] =&gt; 759
+    [18] =&gt; 448
+    [19] =&gt; 424
+    [20] =&gt; 608
+    [21] =&gt; 368
+    [22] =&gt; 703
+    [23] =&gt; 577
+    [24] =&gt; 401
+    [25] =&gt; 572
+    [26] =&gt; 711
+    [27] =&gt; 656
+    [28] =&gt; 618
+    [29] =&gt; 619
+    [30] =&gt; 405
+    [31] =&gt; 436
+    [32] =&gt; 541
+    [33] =&gt; 473
+    [34] =&gt; 718
+    [35] =&gt; 494
+    [36] =&gt; 643
+    [37] =&gt; 438
+    [38] =&gt; 637
+    [39] =&gt; 747
+    [40] =&gt; 766
+    [41] =&gt; 577
+    [42] =&gt; 649
+    [43] =&gt; 757
+    [44] =&gt; 615
+    [45] =&gt; 478
+    [46] =&gt; 629
+    [47] =&gt; 551
+    [48] =&gt; 719
+    [49] =&gt; 489
+    [50] =&gt; 397
+    [51] =&gt; 546
+    [52] =&gt; 503
+    [53] =&gt; 507
+    [54] =&gt; 535
+    [55] =&gt; 449
+    [56] =&gt; 716
+    [57] =&gt; 517
+    [58] =&gt; 451
+    [59] =&gt; 462
+    [60] =&gt; 362
+    [61] =&gt; 508
+    [62] =&gt; 532
+    [63] =&gt; 613
+    [64] =&gt; 773
+    [65] =&gt; 483
+    [66] =&gt; 341
+    [67] =&gt; 563
+    [68] =&gt; 668
+    [69] =&gt; 400
+    [70] =&gt; 685
+    [71] =&gt; 403
+    [72] =&gt; 596
+    [73] =&gt; 737
+    [74] =&gt; 675
+    [75] =&gt; 652
+    [76] =&gt; 737
+    [77] =&gt; 560
+    [78] =&gt; 423
+    [79] =&gt; 451
+    [80] =&gt; 450
+    [81] =&gt; 512
+    [82] =&gt; 626
+    [83] =&gt; 664
+    [84] =&gt; 560
+    [85] =&gt; 623
+    [86] =&gt; 732
+    [87] =&gt; 439
+    [88] =&gt; 659
+    [89] =&gt; 549
+    [90] =&gt; 680
+    [91] =&gt; 547
+    [92] =&gt; 389
+    [93] =&gt; 603
+    [94] =&gt; 558
+    [95] =&gt; 747
+    [96] =&gt; 692
+    [97] =&gt; 407
+    [98] =&gt; 446
+    [99] =&gt; 752
+)
+<br></body></html>
